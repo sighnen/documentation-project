@@ -1,0 +1,3185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Python Documentation</header>
+      <ul>
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li><a class="nav-link" href="#Get_Started">Get Started</a></li>
+        <li><a class="nav-link" href="#Syntax">Syntax</a></li>
+        <li><a class="nav-link" href="#Comments">Comments</a></li>
+        <li><a class="nav-link" href="#Variables">Variables</a></li>
+        <li><a class="nav-link" href="#Data_Types">Data Types</a></li>
+        <li><a class="nav-link" href="#Numbers">Numbers</a></li>
+        <li><a class="nav-link" href="#Casting">Casting</a></li>
+        <li><a class="nav-link" href="#Strings">Strings</a></li>
+        <li><a class="nav-link" href="#Booleans">Booleans</a></li>
+        <li><a class="nav-link" href="#Operators">Operators</a></li>
+        <li><a class="nav-link" href="#Lists">Lists</a></li>
+        <li><a class="nav-link" href="#Tuples">Tuples</a></li>
+        <li><a class="nav-link" href="#Sets">Sets</a></li>
+        <li><a class="nav-link" href="#Dictionaries">Dictionaries</a></li>
+        <li><a class="nav-link" href="#If...Else">If...Else</a></li>
+        <li><a class="nav-link" href="#While_Loops">While Loops</a></li>
+        <li><a class="nav-link" href="#For_Loops">For Loops</a></li>
+        <li><a class="nav-link" href="#Functions">Functions</a></li>
+        <li><a class="nav-link" href="#Lambda">Lambda</a></li>
+        <li><a class="nav-link" href="#Arrays">Arrays</a></li>
+        <li><a class="nav-link" href="#Classes/Objects">Classes/Objects</a></li>
+        <li><a class="nav-link" href="#Inheritance">Inheritance</a></li>
+        <li><a class="nav-link" href="#Iterators">Iterators</a></li>
+        <li><a class="nav-link" href="#Try...Except">Try...Except</a></li>
+        <li><a class="nav-link" href="#User_Input">User Input</a></li>
+        <li><a class="nav-link" href="#String_Formatting">String Formatting</a></li>
+        <li><a class="nav-link" href="#Reference">Reference</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <article>
+          <h3>What is Python?</h3>
+          <p>Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.</p>
+          <p>It is used for:</p>
+          <ul>
+            <li>web development (server-side),</li>
+            <li>software development,</li>
+            <li>mathematics,</li>
+            <li>system scripting.</li>
+          </ul>
+          <h4>What can Python do?</h4>
+          <ul>
+            <li>Python can be used on a server to create web applications.</li>
+            <li>Python can be used alongside software to create workflows.</li>
+            <li>Python can connect to database systems. It can also read and modify files.,</li>
+            <li>Python can be used to handle big data and perform complex mathematics.</li>
+            <li>Python can be used for rapid prototyping, or for production-ready software development.</li>
+          </ul>
+          <h4>Why Python?</h4>
+          <ul>
+            <li>Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).</li>
+            <li>Python has a simple syntax similar to the English language.</li>
+            <li>Python has syntax that allows developers to write programs with fewer lines than some other programming languages.</li>
+            <li>Python runs on an interpreter system, meaning that code can be executed as soon as it is written. This means that prototyping can be very quick.</li>
+            <li>Python can be treated in a procedural way, an object-oriented way or a functional way.</li>
+          </ul>
+          <h4>Good to know</h4>
+          <ul>
+            <li>The most recent major version of Python is Python 3, which we shall be using in this tutorial. However, Python 2, although not being updated with anything other than security updates, is still quite popular.</li>
+            <li>In this tutorial Python will be written in a text editor. It is possible to write Python in an Integrated Development Environment, such as Thonny, Pycharm, Netbeans or Eclipse which are particularly useful when managing larger collections of Python files.</li>
+          </ul>
+          <h4>Python Syntax compared to other programming languages</h4>
+          <ul>
+            <li>Python was designed for readability, and has some similarities to the English language with influence from mathematics.</li>
+            <li>Python uses new lines to complete a command, as opposed to other programming languages which often use semicolons or parentheses.</li>
+            <li>Python relies on indentation, using whitespace, to define scope; such as the scope of loops, functions and classes. Other programming languages often use curly-brackets for this purpose.</li>
+          </ul>
+        </article>
+      </section>
+
+
+      <section class="main-section" id="Get_Started">
+        <header>Get Started</header>
+        <article>
+          <h3>Python Install</h3>
+          <p>Many PCs and Macs will have python already installed.</p>
+          <p>To check if you have python installed on a Windows PC, search in the start bar for Python or run the following on the Command Line (cmd.exe):</p>
+          <code class="cmd">C:\Users\Your Name>python --version</code>
+          <p>To check if you have python installed on a Linux or Mac, then on linux open the command line or on Mac open the Terminal and type:</p>
+          <code class="cmd">python --version</code>
+          <p>If you find that you do not have Python installed on your computer, then you can download it for free from the following website: <a href="https://www.python.org" class="python-link">https://www.python.org/</a></p>
+          
+          <h3>Python Quickstart</h3>
+          <p>Python is an interpreted programming language, this means that as a developer you write Python (.py) files in a text editor and then put those files into the python interpreter to be executed.</p>
+          <p>The way to run a python file is like this on the command line:</p>
+          <code class="cmd">C:\Users\Your Name>python helloworld.py</code>
+          <p>Where "helloworld.py" is the name of your python file.</p>
+          <p>Let's write our first Python file, called helloworld.py, which can be done in any text editor.</p>
+          <code><span class="code-keyword">print</span>("Hello, World!")</code>
+          <p>Simple as that. Save your file. Open your command line, navigate to the directory where you saved your file, and run:</p>
+          <code class="cmd">C:\Users\Your Name>python helloworld.py</code>
+          <p>The output should read:</p>
+          <code class="cmd">Hello, World!</code>
+          <p>Congratulations, you have written and executed your first Python program.</p>
+
+          <h3>The Python Command Line</h3>
+          <p>To test a short amount of code in python sometimes it is quickest and easiest not to write the code in a file. This is made possible because Python can be run as a command line itself.</p>
+          <p>Type the following on the Windows, Mac or Linux command line:</p>
+          <code class="cmd">C:\Users\Your Name>python</code>
+          <p>Or, if the "python" command did not work, you can try "py":</p>
+          <code class="cmd">C:\Users\Your Name>py</code>
+          <p>From there you can write any python, including our hello world example from earlier in the tutorial:</p>
+          <code class="cmd"><span class="gray-cmd">C:\Users\Your Name>python
+            Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:04:45) [MSC v.1900 32 bit (Intel)] on win32
+            Type "help", "copyright", "credits" or "license" for more information.</span>
+            >>> print("Hello, World!")
+          </code>
+          <p>Which will write "Hello, World!" in the command line:</p>
+          <code class="cmd"><span class="gray-cmd">C:\Users\Your Name>python
+            Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:04:45) [MSC v.1900 32 bit (Intel)] on win32
+            Type "help", "copyright", "credits" or "license" for more information.
+            >>> print("Hello, World!")</span>
+            Hello, World!
+          </code>
+          <p>Whenever you are done in the python command line, you can simply type the following to quit the python command line interface:</p>
+          <code class="cmd">exit()</code>
+        </article>
+      </section>
+
+
+      <section class="main-section" id="Syntax">
+        <header>Syntax</header>
+        <article>
+          <h3>Execute Python Syntax</h3>
+          <p>As we learned in the previous page, Python syntax can be executed by writing directly in the Command Line:</p>
+          <code class="cmd">>>> print("Hello, World!")
+            Hello, World!
+          </code>
+          <p>Or by creating a python file on the server, using the .py file extension, and running it in the Command Line:</p>
+          <code class="cmd">C:\Users\Your Name>python myfile.py</code>
+
+          <h3>Python Identation</h3>
+          <p>Indentation refers to the spaces at the beginning of a code line.</p>
+          <p>Where in other programming languages the indentation in code is for readability only, the indentation in Python is very important.</p>
+          <p>Python uses indentation to indicate a block of code.</p>
+          <code>if 5 > 2:
+            <span class="code-indent"><span class="code-keyword">print</span>("Five is greater than two!")</span>
+          </code>
+          <p>Python will give you an error if you skip the indentation:</p>
+          <code class="code-error">if 5 > 2:
+            <span class="code-keyword">print</span>("Five is greater than two!")
+          </code>
+          <p>he number of spaces is up to you as a programmer, the most common use is four, but it has to be at least one.</p>
+          <code>if 5 > 2:
+            <span class="code-indent"><span class="code-keyword">print</span>("Five is greater than two!")</span> 
+            if 5 > 2:
+            <span class="code-indent2"><span class="code-keyword">print</span>("Five is greater than two!") </span>
+          </code>
+          <p>You have to use the same number of spaces in the same block of code, otherwise Python will give you an error:</p>
+          <code class="code-error">if 5 > 2:
+            <span class="code-indent"><span class="code-keyword">print</span>("Five is greater than two!")</span>
+            <span class="code-indent2"><span class="code-keyword">print</span>("Five is greater than two!")</span>
+          </code>
+
+          <h3>Python Variables</h3>
+          <p>In Python, variables are created when you assign a value to it:</p>
+          <code>x = 5
+            y = "Hello, World!"
+          </code>
+          <p>Python has no command for declaring a variable.</p>
+          <p>You will learn more about variables in the Python Variables chapter.</p>
+
+          <h3>Comments</h3>
+          <p>Python has commenting capability for the purpose of in-code documentation.</p>
+          <p>Comments start with a #, and Python will render the rest of the line as a comment:</p>
+          <code><span class="code-comment">#This is a comment.</span>
+            <span class="code-keyword">print</span>("Hello, World!")
+          </code>
+        </article>
+      </section>
+
+
+      <section class="main-section" id="Comments">
+        <header>Comments</header>
+        <article>
+          <p>Comments can be used to explain Python code.</p>
+          <p>Comments can be used to make the code more readable.</p>
+          <p>Comments can be used to prevent execution when testing code.</p>
+
+          <h3>Creating a Comment</h3>
+          <p>Comments starts with a #, and Python will ignore them:</p>
+          <code><span class="code-comment">#This is a comment</span>
+            <span class="code-keyword">print</span>("Hello, World!")
+          </code>
+          <p>Comments can be placed at the end of a line, and Python will ignore the rest of the line:</p>
+          <code><span class="code-keyword">print</span>("Hello, World!") <span class="code-comment">#This is a comment</span></code>
+          <p>A comment does not have to be text that explains the code, it can also be used to prevent Python from executing code:</p>
+          <code><span class="code-comment">#<span class="code-keyword">print</span>("Hello, World!")</span>
+            <span class="code-keyword">print</span>("Cheers, Mate!")
+          </code>
+
+          <h3>Multi Line Comments</h3>
+          <p>Python does not really have a syntax for multi line comments.</p>
+          <p>To add a multiline comment you could insert a # for each line:</p>
+          <code><span class="code-comment">#This is a comment
+            #written in
+            #more than just one line</span>
+            <span class="code-keyword">print</span>("Hello, World!")
+          </code>
+          <p>Or, not quite as intended, you can use a multiline string.</p>
+          <p>Since Python will ignore string literals that are not assigned to a variable, you can add a multiline string (triple quotes) in your code, and place your comment inside it:</p>
+          <code><span class="code-comment">"""
+            This is a comment
+            written in
+            more than just one line
+            """</span>
+            <span class="code-keyword">print</span>("Hello, World!")
+          </code>
+          <p>As long as the string is not assigned to a variable, Python will read the code, but then ignore it, and you have made a multiline comment.</p>
+        </article>
+      </section>
+
+      
+      <section class="main-section" id="Variables">
+        <header>Variables</header>
+        <article>
+          <h3>Variables</h3>
+          <p>Variables are containers for storing data values.</p>
+
+          <h3>Creating Variables</h3>
+          <p>Python has no command for declaring a variable.</p>
+          <p>A variable is created the moment you first assign a value to it.</p>
+          <code>x = 5
+            y = "John"
+            <span class="code-keyword">print</span>(x)
+            <span class="code-keyword">print</span>(y)
+          </code>
+          <p>Variables do not need to be declared with any particular type, and can even change type after they have been set.</p>
+          <code>x = 4       <span class="code-comment"># x is of type int</span>
+            x = "Sally" <span class="code-comment"># x is now of type str</span>
+            <span class="code-keyword">print</span>(x)
+          </code>
+
+          <h3>Casting</h3>
+          <p>If you want to specify the data type of a variable, this can be done with casting.</p>
+          <code>x = str(3)    <span class="code-comment"># x will be '3'</span>
+            y = int(3)    <span class="code-comment"># y will be 3</span>
+            z = float(3)  <span class="code-comment"># z will be 3.0</span>
+          </code>
+
+          <h3>Get the Type</h3>
+          <p>You can get the data type of a variable with the type() function.</p>
+          <code>x = 5
+            y = "John"
+            <span class="code-keyword">print</span>(type(x))
+            <span class="code-keyword">print</span>(type(y))
+          </code>
+
+          <h3>Single or Double Quotes?</h3>
+          <p>String variables can be declared either by using single or double quotes:</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <code>x = "John"
+              <span class="code-comment"># is the same as</span>
+              x = 'John'
+            </code>
+          </div>
+
+          <h3>Case-Sensitive</h3>
+          <p>Variable names are case-sensitive.</p>
+          <code>a = 4
+            A = "Sally"
+            <span class="code-comment">#A will not overwrite a</span>
+          </code>
+
+          <h3>Variable Names</h3>
+          <p>A variable can have a short name (like x and y) or a more descriptive name (age, carname, total_volume). Rules for
+          Python variables:</p>
+          <ul>
+            <li>A variable name must start with a letter or the underscore character</li>
+            <li>A variable name cannot start with a number</li>
+            <li>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _)</li>
+            <li>Variable names are case-sensitive (age,</li>
+          </ul>
+          <p>Legal Variable Names:</p>
+          <code> myvar = <span class= "code-variable">"John"</span>
+            my_var = <span class="code-variable">"John"</span>
+            _my_var = <span class="code-variable">"John"</span>
+            myVar = <span class="code-variable">"John"</span>
+            MYVAR = <span class="code-variable">"John"</span>
+            myvar2 = <span class="code-variable">"John"</span>
+          </code>
+          <p>Illegal Variable Names:</p>
+          <code class="illegal">2myvar = <span class="code-variable">"John"</span>
+          my-var = <span class="code-variable">"John"</span>
+          my var = <span class="code-variable">"John"</span>
+          </code>
+
+          <h3>Multi Words Variable Names</h3>
+          <p>Variable names with more than one word can be difficult to read.</p>
+          <p>There are several techniques you can use to make them more readable:</p>
+          
+          <h3>Camel Case</h3>
+          <p>Each word, except the first, starts with a capital letter:</p>
+          <code>myVariableName = <span class="code-variable">"John"</span></code>
+          
+          <h3>Pascal Case</h3>
+          <p>Each word starts with a capital letter:</p>
+          <code>MyVariableName = <span class="code-variable">"John"</span></code>
+
+          <h3>Snake Case</h3>
+          <p>Each word is separated by an underscore character:</p>
+          <code>my_variable_name = <span class="code-variable">"John"</span></code>
+
+          <h3>Many Values to Multiple Variables</h3>
+          <p>Python allows you to assign values to multiple variables in one line:</p>
+          <code>x, y, z = <span class="code-variable">"Orange"</span>, <span class="code-variable">"Banana"</span>, <span class="code-variable">"Cherry"</span>
+            <span class="code-keyword">print</span>(x)
+            <span class="code-keyword">print</span>(y)
+            <span class="code-keyword">print</span>(z)
+          </code>
+
+          <h3>One Value to Multiple Variables</h3>
+          <p>And you can assign the same value to multiple variables in one line:</p>
+          <code>x = y = z = <span class="code-variable">"Orange"</span>
+            <span class="code-keyword">print</span>(x)
+            <span class="code-keyword">print</span>(y)
+            <span class="code-keyword">print</span>(z)
+          </code>
+
+          <h3>Unpack a Collection</h3>
+          <p>If you have a collection of values in a list, tuple, etc. Python allows you to extract the values into variables. This is called <i>unpacking</i>.</p>
+          <code>fruits = [<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>]
+            x, y, z = fruits
+            <span class="code-keyword"><span class="code-keyword">print</span></span>(x)
+            <span class="code-keyword"><span class="code-keyword">print</span></span>(y)
+            <span class="code-keyword"><span class="code-keyword">print</span></span>(z)
+          </code>
+
+          <h3>Output Variables</h3>
+          <p>The Python <span class="ext-code">print()</span> function is often used to output variables.</p>
+          <code>x = <span class="code-variable">"Python is awesome"</span>
+            <span class="code-keyword"><span class="code-keyword">print</span></span>
+
+            Output: Python is awesome
+          </code>
+          <p>In the <span class="ext-code">print()</span> function, you output multiple variables, separated by a comma.</p>
+          <code>x = <span class="code-variable">"Python"</span>
+            y = <span class="code-variable">"is"</span>
+            z = <span class="code-variable">"awesome"</span>
+            <span class="code-keyword">print</span>(x, y, z)
+
+            Output: Python is awesome
+          </code>
+          <p>You can use the <span class="ext-code">+</span> operator to output multiple variables:</p>
+          <code>x = <span class="code-variable">"Python "</span>
+            y = <span class="code-variable">"is "</span>
+            z = <span class="code-variable">"awesome"</span>
+            <span class="code-keyword">print</span>(x + y + z)
+
+            Output: Python is awesome
+          </code>
+          <p>For numbers, the <span class="ext-code">+</span> character works as a mathematical operator:</p>
+          <code>x = <span class="code-variable">5</span>
+            y = <span class="code-variable">10</span>
+            <span class="code-keyword">print</span>(x + y)
+
+            Output: 15
+          </code>
+          <p>In the <span class="ext-code">print()</span> function, when you try to combine a string and a number with the <span class="ext-code">+</span> operator, Python will give you an error:</p>
+          <code class="illegal">x = <span class="code-variable">5</span>
+            y = <span class="code-variable">"John"</span>
+            <span class="code-keyword">print</span>(x + y)
+
+            TypeError: unsupported operand type(s) for +: 'int' and 'str'
+          </code>
+          <p>The best way to output multiple variables in the <span class="ext-code">print()</span> function is to separate them with commas, which even support different data types:</p>
+          <code>x = <span class="code-variable">5</span>
+            y = <span class="code-variable">"John"</span>
+            <span class="code-keyword">print</span>(x, y)
+
+            Output: 5 John
+          </code>
+
+          <h3>Global Variables</h3>
+          <p>Variables that are created outside of a function (as in all of the examples above) are known as global variables.
+          <br>
+          <br>
+          Global variables can be used by everyone, both inside of functions and outside.
+          </p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <code>x = <span class="code-variable">"awesome</span>
+              <span class="code-keyword">def</span> myfunc():
+              <span class="code-indent"><span class="code-keyword">print</span>(<span class="code-variable">"Python is "</span> + x)</span>
+              myfunc()
+
+              Output: Python is awesome
+            </code>
+          </div>
+          <p>If you create a variable with the same name inside a function, this variable will be local, and can only be used inside the function. The global variable with the same name will remain as it was, global and with the original value.</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <code>x = "awesome"
+              <span class="code-keyword">def</span> myfunc():
+              <span class="code-indent">x = <span class="code-variable">"fantastic"</span></span>
+              <span class="code-indent"><span class="code-keyword">print</span>(<span class="code-variable">"Python is "</span> + x)</span>
+              myfunc()
+              <span class="code-keyword">print</span>(<span class="code-variable">"Python is "</span> + x)
+              
+              Output: Python is awesome
+            </code>
+          </div>
+
+          <h3>The Global Keyword</h3>
+          <p>Normally, when you create a variable inside a function, that variable is local, and can only be used inside that function.
+          <br>
+          <br>
+          To create a global variable inside a function, you can use the <span class="ext-code">global</span> keyword.
+          </p>
+          <p>If you use the <span class="ext-code">global</span> keyword, the variable belongs to the global scope:</p>
+          <code><span class="code-keyword">def</span> myfunc()
+            <span class="code-indent"><span class="code-keyword">global</span> x </span>
+            <span class="code-indent">x = <span class="code-variable">"fantastic"</span></span>
+            myfunc()
+            <span class="code-keyword">print</span>(<span class="code-variable">"Python is "</span> + x)
+            
+            Output: Python is fantastic
+          </code>
+          <p>Also, use the <span class="ext-code">global</span> keyword if you want to change a global variable inside a function.</p>
+          <p>To change the value of a global variable inside a function, refer to the variable by using the <span class="ext-code">global</span> keyword:</p>
+          <code>x = <span class="code-variable">"awesome"</span>
+            <span class="code-keyword">def</span> myfunc():
+            <span class="code-indent"><span class="code-keyword">global</span> x</span>
+            <span class="code-indent">x = <span class="code-variable">"fantastic</span></span>
+            myfunc()
+            <span class="code-keyword">print</span>(<span class="code-variable">"Python is "</span> + x)
+            
+            Output: Python is fantastic
+          </code>
+        </article>
+      </section>
+
+
+      <section class="main-section" id="Data_Types">
+        <header>Data Types</header>
+        <article>
+          <h3>Built-in Data Types</h3>
+          <p>In programming, data type is an important concept.
+          <br>
+          <br>
+          Variables can store data of different types, and different types can do different things.
+          <br>
+          <br>
+          Python has the following data types built-in by default, in these categories:
+          </p>
+          <ul>
+            <li>Text Type: <span class="ext-code">str</span></li>
+            <li>Numeric Types:<span class="ext-code">int</span>, <span class="ext-code">float</span>, <span class="ext-code">complex</span></li>
+            <li>Sequence Types: <span class="ext-code">list</span>, <span class="ext-code">tuple</span>, <span class="ext-code">range</span></li>
+            <li>Mapping Type: <span class="ext-code">dict</span></li>
+            <li>Set Types: <span class="ext-code">set</span>, <span class="ext-code">frozenset</span></li>
+            <li>Boolean Type: <span class="ext-code">bool</span></li>
+            <li>Binary Types: <span class="ext-code">bytes</span>, <span class="ext-code">bytearray</span>, <span class="ext-code">memoryview</span></li>
+            <li>None Type: <span class="ext-code">nonetype</span></li>
+          </ul>
+          <h3>Getting the Data Type</h3>
+          <p>You can get the data type of any object by using the <span class="ext-code">type()</span> function:</p>
+          <code>x = <span class="code-variable">5</span>
+            <span class="code-keyword">print</span>(<span class="code-keyword">type</span>(x))
+            
+            Output: class 'int'
+          </code>
+          
+          <h3>Setting the Data Type</h3>
+          <p>In Python, the data type is set when you assign a value to a variable:</p>
+          <table>
+            <tr>
+              <th>Example</th>
+              <th>Data Type</th>
+            </tr>
+            <tr>
+              <td class="td-left">x = "Hello World"</td>
+              <td>str</td>
+            <tr>
+              <td class="td-left">x = 20</td>
+              <td>int</td>
+            </tr>
+            <tr>
+              <td class="td-left">x = 20.5</td>
+              <td>float</td>
+            </tr>
+            <tr>
+              <td class="td-left">x = 1j</td>
+              <td>complex</td>
+            </tr>
+            <tr>
+              <td class="td-left">x = ["apple", "banana", "cherry"]</td>
+              <td>list</td>
+            </tr>
+            <tr>
+              <td class="td-left">x = ("apple", "banana", "cherry")</td>
+              <td>tuple</td>
+            </tr>
+            <tr>
+              <td class="td-left">x = range(6)</td>
+              <td>range</td>
+            </tr>
+            <tr>
+              <td class="td-left">x = {"name" : "John", "age" : 36}</td>
+              <td>dict</td>
+            </tr>
+            <tr>
+              <td class="td-left">x = {"apple", "banana", "cherry"}</td>
+              <td>set</td>
+            </tr>
+            <tr>
+              <td class="td-left">x = frozenset({"apple", "banana", "cherry"})</td>
+              <td>frozenset</td>
+            </tr>
+            <tr>
+              <td class="td-left">x = True</td>
+              <td>bool</td>
+            </tr>
+            <tr>
+              <td class="td-left">x = b"Hello"</td>
+              <td>bytes</td>
+            </tr>
+            <tr>
+              <td class="td-left">x = bytearray(5)</td>
+              <td>bytearray</td>
+            </tr>
+            <tr>
+              <td class="td-left">x = memoryview(bytes(5))</td>
+              <td>memoryview</td>
+            </tr>
+            <tr>
+              <td class="td-left">x = None</td>
+              <td>nonetype</td>
+            </tr>
+          </table>
+
+          <h3>Setting the Specific Data Type</h3>
+          <p>If you want to specify the data type, you can use the following constructor functions:</p>
+          <table>
+            <tr>
+              <th>Example</th>
+              <th>Data Type</th>
+            </tr>
+            <tr>
+              <td class="td-left">x = str("Hello World")</td>
+              <td>str</td>
+            <tr>
+              <td class="td-left">x = int(20)</td>
+              <td>int</td>
+            </tr>
+            <tr>
+              <td class="td-left">x = float(20.5)</td>
+              <td>float</td>
+            </tr>
+            <tr>
+              <td class="td-left">x = complex(1j)</td>
+              <td>complex</td>
+            </tr>
+            <tr>
+              <td class="td-left">x = list(("apple", "banana", "cherry"))</td>
+              <td>list</td>
+            </tr>
+            <tr>
+              <td class="td-left">x = tuple(("apple", "banana", "cherry"))</td>
+              <td>tuple</td>
+            </tr>
+            <tr>
+              <td class="td-left">x = range(6)</td>
+              <td>range</td>
+            </tr>
+            <tr>
+              <td class="td-left">x = dict("name" : "John", "age" : 36)</td>
+              <td>dict</td>
+            </tr>
+            <tr>
+              <td class="td-left">x = set(("apple", "banana", "cherry"))</td>
+              <td>set</td>
+            </tr>
+            <tr>
+              <td class="td-left">x = frozenset(("apple", "banana", "cherry"))</td>
+              <td>frozenset</td>
+            </tr>
+            <tr>
+              <td class="td-left">x = bool(5)</td>
+              <td>bool</td>
+            </tr>
+            <tr>
+              <td class="td-left">x = bytes(5)</td>
+              <td>bytes</td>
+            </tr>
+            <tr>
+              <td class="td-left">x = bytearray(5)</td>
+              <td>bytearray</td>
+            </tr>
+            <tr>
+              <td class="td-left">x = memoryview(bytes(5))</td>
+              <td>memoryview</td>
+            </tr>
+          </table>
+        </article>
+      </section>
+
+
+      <section class="main-section" id="Numbers">
+        <header>Numbers</header>
+        <article>
+          <h3>Python Numbers</h3>
+          <p>There are three numeric types in Python:</p>
+          <ul>
+            <li><span class="ext-code">int</span></li>
+            <li><span class="ext-code">float</span></li>
+            <li><span class="ext-code">complex</span></li>
+          </ul>
+          <p>Variables of numeric types are created when you assign a value to them:</p>
+          <code>x = <span class="code-variable">1</span><span class="code-comment"> # int</span>
+            y = <span class="code-variable">2.8</span><span class="code-comment"> # float</span>
+            z = 1j <span class="code-comment"> # complex</span>
+          </code>
+          <p>To verify the type of any object in Python, use the <span class="ext-code">type()</span> function:</p>
+          <code><span class="code-keyword">print</span>(<span class="code-keyword">type</span>(x))
+            <span class="code-keyword">print</span>(<span class="code-keyword">type</span>(y))
+            <span class="code-keyword">print</span>(<span class="code-keyword">type</span>(z))
+          </code>
+          
+          <h3>Int</h3>
+          <p>Int, or integer, is a whole number, positive or negative, without decimals, of unlimited length.</p>
+          <code>x = <span class="code-variable">1</span>
+            y = <span class="code-variable">35656222554887711</span>
+            z = -<span class="code-variable">3255522</span>
+            <span class="code-keyword">print</span>(<span class="code-keyword">type</span>(x))
+            <span class="code-keyword">print</span>(<span class="code-keyword">type</span>(y))
+            <span class="code-keyword">print</span>(<span class="code-keyword">type</span>(z))
+          </code>
+
+          <h3>Float</h3>
+          <p>Float, or "floating point number" is a number, positive or negative, containing one or more decimals.</p>
+          <code>x = <span class="code-variable">1.10</span>
+            y = <span class="code-variable">1.0</span>
+            z = -<span class="code-variable">35.59</span>
+            <span class="code-keyword">print</span>(<span class="code-keyword">type</span>(x))
+            <span class="code-keyword">print</span>(<span class="code-keyword">type</span>(y))
+            <span class="code-keyword">print</span>(<span class="code-keyword">type</span>(z))
+          </code>
+          <p>Float can also be specific numbers with an "e" to indicate the power of 10.</p>
+          <code>x = <span class="code-variable">35e3</span>
+            y = <span class="code-variable">12E4</span>
+            z = -<span class="code-variable">87.7e100</span>
+            <span class="code-keyword">print</span>(<span class="code-keyword">type</span>(x))
+            <span class="code-keyword">print</span>(<span class="code-keyword">type</span>(y))
+            <span class="code-keyword">print</span>(<span class="code-keyword">type</span>(z))
+          </code>
+
+          <h3>Complex</h3>
+          <p>Complex numbers are written with a "j" as the imaginary part:</p>
+          <code>x = <span class="code-variable">3</span>+5j
+            y = 5j
+            z = -5j
+            <span class="code-keyword">print</span>(<span class="code-keyword">type</span>(x))
+            <span class="code-keyword">print</span>(<span class="code-keyword">type</span>(y))
+            <span class="code-keyword">print</span>(<span class="code-keyword">type</span>(z))
+          </code>
+
+          <h3>Type Conversion</h3>
+          <p>You can convert from one type to another with the int(), float(), and complex() methods:</p>
+          <code>x = <span class="code-variable">1</span> <span class="code-comment"># int</span>
+            y = <span class="code-variable">2.8</span> <span class="code-comment"># float</span>
+            z = 1j <span class="code-comment"># complex</span>
+            
+            <span class="code-comment">#convert from int to float:</span>
+            a = <span class="code-keyword">float</span>(x)
+            
+            <span class="code-comment">#convert from float to int:</span>
+            b = <span class="code-keyword">int</span>(y)
+            
+            <span class="code-comment">#convert from int to complex:</span>
+            c = <span class="code-keyword">complex</span>(x)
+            
+            <span class="code-keyword">print</span>(a)
+            <span class="code-keyword">print</span>(b)
+            <span class="code-keyword">print</span>(c)
+            
+            <span class="code-keyword">print</span>(<span class="code-keyword">type</span>(a))
+            <span class="code-keyword">print</span>(<span class="code-keyword">type</span>(b))
+            <span class="code-keyword">print</span>(<span class="code-keyword">type</span>(c))
+          </code>
+
+          <h3>Random Number</h3>
+          <p>Python does not have a <span class="ext-code">random()</span> function to make a random number, but Python has a built-in module called <span class="ext-code">random</span> that can be used to make random numbers:</p>
+          <code><span class="code-keyword">import</span> random
+            <span class="code-keyword">print</span>(random.randrange(<span class="code-variable">1</span>, <span class="code-variable">10</span>))
+          </code>
+        </article>
+      </section>
+
+
+      <section class="main-section" id="Casting">
+        <header>Casting</header>
+        <article>
+          <h3>Specify a Variable Type</h3>
+          <p>There may be times when you want to specify a type on to a variable. This can be done with casting. Python is an
+          object-orientated language, and as such it uses classes to define data types, including its primitive types.
+          <br>
+          <br>
+          Casting in python is therefore done using constructor functions:</p>
+          <ul>
+            <li><span class="ext-code">int()</span> - constructs an integer number from an integer literal, a float literal (by removing all decimals), or a string
+            literal (providing the string represents a whole number)</li>
+            <li><span class="ext-code">float()</span> - constructs a float number from an integer literal, a float literal or a string literal (providing the string
+            represents a float or an integer)</li>
+            <li><span class="ext-code">str()</span> - constructs a string from a wide variety of data types, including strings, integer literals and float literals</li>
+          </ul>
+          <code>Integers:
+            x = <span class="code-keyword">int</span>(<span class="code-intvariable">1</span>) <span class="code-comment"># x will be 1</span>
+            y = <span class="code-keyword">int</span>(<span class="code-intvariable">2.8</span>) <span class="code-comment"># y will be 2</span>
+            z = <span class="code-keyword">int</span>(<span class="code-variable">"3"</span>) <span class="code-comment"># z will be 3</span>
+          </code>
+          <code>Floats:
+            x = <span class="code-keyword">float</span>(<span class="code-intvariable">1</span>) <span class="code-comment"># x will be 1.0</span>
+            y = <span class="code-keyword">float</span>(<span class="code-intvariable">2.8</span>) <span class="code-comment"># y will be 2.8</span>
+            z = <span class="code-keyword">float</span>(<span class="code-variable">"3"</span>) <span class="code-comment"># z will be 3.0</span>
+            w = <span class="code-keyword">float</span>(<span class="code-variable">"4.2"</span>) <span class="code-comment"># w will be 4.2</span>
+          </code>
+          <code>Strings:
+            x = <span class="code-keyword">str</span>(<span class="code-variable">"s1"</span>) <span class="code-comment"># x will be 's1'</span>
+            y = <span class="code-keyword">str</span>(<span class="code-intvariable">2</span>) <span class="code-comment"># y will be '2'</span>
+            z = <span class="code-keyword">str</span>(<span class="code-intvariable">3.0</span>) <span class="code-comment"># z will be '3.0'</span>
+          </code>
+        </article>
+      </section>
+
+
+      <section class="main-section" id="Strings">
+        <header>Strings</header>
+        <article>
+          <h3>Strings</h3>
+          <p>Strings in python are surrounded by either single quotation marks, or double quotation marks.
+          <br><br>
+          <span class="ext-code">'hello'</span> is the same as <span class="ext-code">"hello"</span>.
+          <br><br>
+          You can display a string literal with the <span class="ext-code">print()</span> function:</p>
+          <code><span class="code-keyword">print</span>(<span class="code-variable">"Hello"</span>)
+            <span class="code-keyword">print</span>(<span class="code-variable">'Hello'</span>)
+          </code>
+
+          <h3>Assign String to Variable</h3>
+          <p>Assigning a string to a variable is done with the variable name followed by an equal sign and the string:</p>
+          <code>a = <span class="code-variable">"Hello"</span>
+            <span class="code-keyword">print</span>(a)
+          </code>
+
+          <h3>Multiline Strings</h3>
+          <p>You can assign a multiline string to a variable by using three quotes:
+            <br>
+            <br>
+            You can use three double quotes:
+          </p>
+          <code>a = <span class="code-variable">"""Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua."""</span>
+            <span class="code-keyword">print</span>(a)
+          </code>
+          <p>Or three single quotes:</p>
+          <code>a = <span class="code-variable">'''Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua.'''</span>
+            <span class="code-keyword">print</span>(a)
+          </code>
+        
+          <h3>Strings are Arrays</h3>
+          <p>Like many other popular programming languages, strings in Python are arrays of bytes representing unicode characters.
+          <br><br>
+          However, Python does not have a character data type, a single character is simply a string with a length of 1.
+          <br><br>
+          Square brackets can be used to access elements of the string.</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Get the character at position 1 (remember that the first character has the position 0):</p>
+            <code>a = <span class="code-variable">"Hello, World!"</span>
+              <span class="code-keyword">print</span>(a[<span class="code-intvariable">1</span>])
+            </code>
+          </div>
+
+          <h3>Looping Through a String</h3>
+          <p>Since strings are arrays, we can loop through the characters in a string, with a <span class="ext-code">for</span> loop.</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Loop through the letters in the word "banana":</p>
+            <code><span class="code-keyword">for</span> x <span class="code-keyword">in</span> <span class="code-variable">"banana"</span>:
+              <span class="code-indent"><span class="code-keyword">print</span>(x)</span>
+            </code>
+          </div>
+
+          <h3>String Length</h3>
+          <p>To get the length of a string, use the <span class="ext-code">len()</span> function.</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>The <span class="ext-code">len()</span> function returns the length of a string:</p>
+            <code>a = <span class="code-variable">"Hello, World!"</span>
+              <span class="code-keyword">print</span>(<span class="code-keyword">len</span>(a))
+            </code>
+          </div>
+
+          <h3>Check String</h3>
+          <p>To check if a certain phrase or character is present in a string, we can use the keyword <span class="ext-code">in</span>.</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Check if "free" is present in the following text:</p>
+            <code>txt = <span class="code-variable">"The best things in life are free!"</span>
+              <span class="code-keyword">print</span>(<span class="code-variable">"free"</span> <span class="code-keyword">in</span> txt)
+            </code>
+            <p>Use it in an if statement:</p>
+            <code>txt = <span class="code-variable">"The best things in life are free!"</span>
+              <span class="code-keyword">if</span> <span class="code-variable">"free"</span> <span class="code-keyword">in</span> txt:
+              <span class="code-indent"><span class="code-keyword">print</span>(<span class="code-variable">"Yes, 'free' is present."</span>)</span>
+            </code>
+          </div>
+
+          <h3>Check if NOT</h3>
+          <p>To check if a certain phrase or character is NOT present in a string, we can use the keyword <span class="ext-code">not in</span>.</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>To check if a certain phrase or character is NOT present in a string, we can use the keyword not in.</p>
+            <code>txt = <span class="code-variable">"The best things in life are free!"</span>
+              <span class="code-keyword">print</span>(<span class="code-variable">"expensive"</span> not <span class="code-keyword">in</span> txt)
+            </code>
+            <p>Use it in an <span class="ext-code">if</span> statement:</p>
+            <code>txt = <span class="code-variable">"The best things in life are free!"</span>
+              <span class="code-keyword">if</span> <span class="code-variable">"expensive"</span> not <span class="code-keyword">in</span> txt:
+              <span class="code-keyword">print</span>(<span class="code-variable">"No, 'expensive' is NOT present."</span>)
+            </code>
+          </div>
+
+          <h3>Slicing</h3>
+          <p>You can return a range of characters by using the slice syntax.
+            <br><br>
+            Specify the start index and the end index, separated by a colon, to return a part of the string.
+          </p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Get the characters from position 2 to position 5 (not included):</p>
+            <code>b = <span class="code-variable">"Hello, World!"</span>
+              <span class="code-keyword">print</span>(b[<span class="code-intvariable">2</span>:<span class="code-intvariable">5</span>])
+            </code>
+          </div>
+
+          <h3>Slice from the Start</h3>
+          <p>By leaving out the start index, the range will start at the first character:</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Get the characters from the start to position 5 (not included):</p>
+            <code>b = <span class="code-variable">"Hello, World!"</span>
+              <span class="code-keyword">print</span>(b[:<span class="code-intvariable">5</span>])
+            </code>
+          </div>
+
+          <h3>Slice to the End</h3>
+          <p>By leaving out the end index, the range will go to the end:</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Get the characters from position 2, and all the way to the end:</p>
+            <code>b = <span class="code-variable">"Hello, World!"</span>
+              <span class="code-keyword">print</span>(b[<span class="code-intvariable">2</span>:])
+            </code>
+          </div> 
+
+          <h3>Negative Indexing</h3>
+          <p>Use negative indexes to start the slice from the end of the string:</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Get the characters:
+              <br>
+              From: "o" in "World!" (position -5)
+              <br>
+              To, but not included: "d" in "World!" (position -2):
+            </p>
+            <code>b = <span class="code-variable">"Hello, World!"</span>
+              <span class="code-keyword">print</span>(b[-<span class="code-intvariable">5</span>:-<span class="code-intvariable">2</span>])
+            </code>
+          </div>
+
+          <h3>Modify Strings</h3>
+          <p>Python has a set of built-in methods that you can use on strings.</p>
+
+          <h3>Upper Case</h3>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>The <span class="ext-code">upper()</span> method returns the string in upper case:</p>
+            <code>a = <span class="code-variable">"Hello, World!"</span>
+              <span class="code-keyword">print</span>(a.upper())
+            </code>
+          </div>
+
+          <h3>Lower Case</h3>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>The <span class="ext-code">lower()</span> method returns the string in lower case:</p>
+            <code>a = <span class="code-variable">"Hello, World!"</span>
+              <span class="code-keyword">print</span>(a.lower())
+            </code>
+          </div>
+
+          <h3>Remove Whitespace</h3>
+          <p>Whitespace is the space before and/or after the actual text, and very often you want to remove this space.</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>The <span class="ext-code">strip()</span> method removes any whitespace from the beginning or the end:</p>
+            <code>a = <span class="code-variable">" Hello, World! "</span>
+              <span class="code-keyword">print</span>(a.strip()) <span class="code-comment"># returns "Hello, World!"</span>
+            </code>
+          </div>
+
+          <h3>Replace String</h3>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>The <span class="ext-code">replace()</span> method replaces a string with another string:</p>
+            <code>a = <span class="code-variable">"Hello, World!"</span>
+              <span class="code-keyword">print</span>(a.replace(<span class="code-variable">"H"</span>, <span class="code-variable">"J"</span>))
+            </code>
+          </div>
+
+          <h3>Split String</h3>
+          <p>The <span class="ext-code">split()</span> method returns a list where the text between the specified separator becomes the list items.</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>The <span class="ext-code">split()</span> method splits the string into substrings if it finds instances of the separator:</p>
+            <code>a = <span class="code-variable">"Hello, World!"</span>
+              <span class="code-keyword">print</span>(a.split(<span class="code-variable">","</span>)) <span class="code-comment"># returns ['Hello', ' World!']</span>
+            </code>
+          </div>
+
+          <h3>String Concatenation</h3>
+          <p>To concatenate, or combine, two strings you can use the + operator.</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Merge variable <span class="ext-code">a</span> with variable <span class="ext-code">b</span> into variable <span class="ext-code">c</span>:</p>
+            <code>a = <span class="code-variable">"Hello"</span>
+              b = <span class="code-variable">"World"</span>
+              c = a + b
+              <span class="code-keyword">print</span>(c)
+            </code>
+          </div>
+          <br>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>To add a space between them, add a <span class="ext-code">" ":</p>
+            <code>a = <span class="code-variable">"Hello"</span>
+              b = <span class="code-variable">"World"</span>
+              c = a + <span class="code-variable">" "</span> + b
+              <span class="code-keyword">print</span>(c)
+            </code>
+          </div>
+
+          <h3>String Format</h3>
+          <p>As we learned in the Python Variables chapter, we cannot combine strings and numbers like this:</p>
+          <div class="illegal-example">
+            <p class="text-example">Example</p>
+            <code>age = <span class="code-intvariable">36</span>
+              txt = <span class="code-variable">"My name is John, I am "</span> + age
+              <span class="code-keyword">print</span>(txt)
+            </code>
+          </div>
+          <p>
+            But we can combine strings and numbers by using the <span class="ext-code">format()</span> method!
+            <br>
+            The <span class="ext-code">format()</span> method takes the passed arguments, formats them, and places them in the string where the placeholders <span class="ext-code">{}</span> are:
+          </p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Use the <span class="ext-code">format()</span> method to insert numbers into strings:</p>
+            <code>age = <span class="code-intvariable">36</span>
+              txt = <span class="code-variable">"My name is John, and I am {}"</span>
+              <span class="code-keyword">print</span>(txt.<span class="code-keyword">format</span>(age))
+            </code>
+          </div>
+          <p>The <span class="ext-code">format()</span> method takes unlimited number of arguments, and are placed into the respective placeholders:</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <code>quantity = <span class="code-intvariable">3</span>
+              itemno = <span class="code-intvariable">567</span>
+              price = <span class="code-intvariable">49.95</span>
+              myorder = <span class="code-variable">"I want {} pieces of item {} for {} dollars."</span>
+              <span class="code-keyword">print</span>(myorder.<span class="code-keyword">format</span>(quantity, itemno, price))
+            </code>
+          </div>
+          <p>You can use index numbers <span class="ext-code">{0}</span> to be sure the arguments are placed in the correct placeholders:</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <code>quantity = <span class="code-intvariable">3</span>
+              itemno = <span class="code-intvariable">567</span>
+              price = <span class="code-intvariable">49.95</span>
+              myorder = <span class="code-variable">"I want to pay {2} dollars for {0} pieces of item {1}."</span>
+              <span class="code-keyword">print</span>(myorder.<span class="code-keyword">format</span>(quantity, itemno, price))
+            </code>
+          </div>
+
+          <h3>Escape Character</h3>
+          <p>To insert characters that are illegal in a string, use an escape character.
+          <br>
+          <br>
+          An escape character is a backslash <span class="ext-code">\</span> followed by the character you want to insert.
+          <br>
+          <br>
+          An example of an illegal character is a double quote inside a string that is surrounded by double quotes:</p>
+          <div class="illegal-example">
+            <p class="text-example">Example</p>
+            <p>You will get an error if you use double quotes inside a string that is surrounded by double quotes:</p>
+            <code>txt = <span class="code-variable">"We are the so-called "Vikings" from the north."</span></code>
+          </div>
+          <p>To fix this problem, use the escape character <span class="ext-code">\"</span>:</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>The escape character allows you to use double quotes when you normally would not be allowed:</p>
+            <code>txt = <span class="code-variable">"We are the so-called \"</span>Vikings\<span class="code-variable">" from the north."</span></code>
+          </div>
+          <p>Other escape characters used in Python:</p>
+          <table>
+            <tr>
+              <th>Code</th>
+              <th>Result</th>
+            </tr>
+            <tr>
+              <td>\'</td>
+              <td>Single Quote</td>
+            </tr>
+            <tr>
+              <td>\\</td>
+              <td>Backslash</td>
+            </tr>
+            <tr>
+              <td>\n</td>
+              <td>New Line</td>
+            </tr>
+            <tr>
+              <td>\r</td>
+              <td>Carriage Return</td>
+            </tr>
+            <tr>
+              <td>\t</td>
+              <td>Tab</td>
+            </tr>
+            <tr>
+              <td>\b</td>
+              <td>Backspace</td>
+            </tr>
+            <tr>
+              <td>\f</td>
+              <td>Form Feed</td>
+            </tr>
+            <tr>
+              <td>\ooo</td>
+              <td>Octal value</td>
+            </tr>
+            <tr>
+              <td>\xhh</td>
+              <td>Hex value</td>
+            </tr>
+          </table>
+
+          <h3>String Methods</h3>
+          <p>Python has a set of built-in methods that you can use on strings.</p>
+          <div class="note-container">
+            <p><b>Note:</b> All string methods return new values. They do not change the original string.</p>
+          </div>
+          <br>
+          <table>
+            <tr>
+              <th>Method</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>capitalize()</td>
+              <td>Converts the first character to upper case</td>
+            </tr>
+            <tr>
+              <td>casefold()</td>
+              <td>Converts string into lower case</td>
+            </tr>
+            <tr>
+              <td>center()</td>
+              <td>Returns a centered string</td>
+            </tr>
+            <tr>
+              <td>count()</td>
+              <td>Returns the number of times a specified value occurs in a string</td>
+            </tr>
+            <tr>
+              <td>encode()</td>
+              <td>Returns an encoded version of the string</td>
+            </tr>
+            <tr>
+              <td>endswith()</td>
+              <td>Returns true if the string ends with the specified value</td>
+            </tr>
+            <tr>
+              <td>expandtabs()</td>
+              <td>Sets the tab size of the string</td>
+            </tr>
+            <tr>
+              <td>find()</td>
+              <td>Searches the string for a specified value and returns the position of where it was found</td>
+            </tr>
+            <tr>
+              <td>format()</td>
+              <td>Formats specified values in a string</td>
+            </tr>
+            <tr>
+              <td>format_map()</td>
+              <td>Formats specified values in a string</td>
+            </tr>
+            <tr>
+              <td>index()</td>
+              <td>Searches the string for a specified value and returns the position of where it was found</td>
+            </tr>
+            <tr>
+              <td>isalnum()</td>
+              <td>Returns True if all characters in the string are alphanumeric</td>
+            </tr>
+            <tr>
+              <td>isalpha()</td>
+              <td>Returns True if all characters in the string are in the alphabet</td>
+            </tr>
+            <tr>
+              <td>isdecimal()</td>
+              <td>Returns True if all characters in the string are decimals</td>
+            </tr>
+            <tr>
+              <td>isdigit()</td>
+              <td>Returns True if all characters in the string are digits</td>
+            </tr>
+            <tr>
+              <td>isidentifier()</td>
+              <td>Returns True if the string is an identifier</td>
+            </tr>
+            <tr>
+              <td>islower()</td>
+              <td>Returns True if all characters in the string are lower case</td>
+            </tr>
+            <tr>
+              <td>isnumeric()</td>
+              <td>Returns True if all characters in the string are numeric</td>
+            </tr>
+            <tr>
+              <td>isprintable()</td>
+              <td>Returns True if all characters in the string are printable</td>
+            </tr>
+            <tr>
+              <td>isspace()</td>
+              <td>Returns True if all characters in the string are whitespaces</td>
+            </tr>
+            <tr>
+              <td>istitle()</td>
+              <td>Returns True if the string follows the rules of a title</td>
+            </tr>
+            <tr>
+              <td>isupper()</td>
+              <td>Returns True if all characters in the string are upper case</td>
+            </tr>
+            <tr>
+              <td>join()</td>
+              <td>Joins the elements of an iterable to the end of the string</td>
+            </tr>
+            <tr>
+              <td>ljust()</td>
+              <td>Returns a left justified version of the string</td>
+            </tr>
+            <tr>
+              <td>lower()</td>
+              <td>Converts a string into lower case</td>
+            </tr>
+            <tr>
+              <td>lstrip()</td>
+              <td>Returns a left trim version of the string</td>
+            </tr>
+            <tr>
+              <td>maketrans()</td>
+              <td>Returns a translation table to be used in translations</td>
+            </tr>
+            <tr>
+              <td>partition()</td>
+              <td>Returns a tuple where the string is parted into three parts</td>
+            </tr>
+            <tr>
+              <td>replace()</td>
+              <td>Returns a string where a specified value is replaced with a specified value</td>
+            </tr>
+            <tr>
+              <td>rfind()</td>
+              <td>Searches the string for a specified value and returns the last position of where it was found</td>
+            </tr>
+            <tr>
+              <td>rindex()</td>
+              <td>Searches the string for a specified value and returns the last position of where it was found</td>
+            </tr>
+            <tr>
+              <td>rjust()</td>
+              <td>Returns a right justified version of the string</td>
+            </tr>
+            <tr>
+              <td>rpartition()</td>
+              <td>Returns a tuple where the string is parted into three parts</td>
+            </tr>
+            <tr>
+              <td>rsplit()</td>
+              <td>Splits the string at the specified separator, and returns a list</td>
+            </tr>
+            <tr>
+              <td>rstrip()</td>
+              <td>Returns a right trim version of the string</td>
+            </tr>
+            <tr>
+              <td>split()</td>
+              <td>Splits the string at the specified separator, and returns a list</td>
+            </tr>
+            <tr>
+              <td>splitlines()</td>
+              <td>Splits the string at line breaks and returns a list</td>
+            </tr>
+            <tr>
+              <td>startswith()</td>
+              <td>Returns true if the string starts with the specified value</td>
+            </tr>
+            <tr>
+              <td>strip()</td>
+              <td>Returns a trimmed version of the string</td>
+            </tr>
+            <tr>
+              <td>swapcase()</td>
+              <td>Swaps cases, lower case becomes upper case and vice versa</td>
+            </tr>
+            <tr>
+              <td>title()</td>
+              <td>Converts the first character of each word to upper case</td>
+            </tr>
+            <tr>
+              <td>translate()</td>
+              <td>Returns a translated string</td>
+            </tr>
+            <tr>
+              <td>upper()</td>
+              <td>Converts a string into upper case</td>
+            </tr>
+            <tr>
+              <td>zfill()</td>
+              <td>Fills the string with a specified number of 0 values at the beginning</td>
+            </tr>
+          </table>
+        </article>
+      </section>
+
+
+      <section class="main-section" id="Booleans">
+        <header>Booleans</header>
+        <article>
+          <p>Booleans represent one of two values: <span class="ext-code">True</span> or <span class="ext-code">False</span>.</p>
+
+          <h3>Boolean Values</h3>
+          <p>
+            In programming you often need to know if an expression is <span class="ext-code">True</span> or <span class="ext-code">False</span>.
+            <br>
+            <br>
+            You can evaluate any expression in Python, and get one of two answers, <span class="ext-code">True</span> or <span class="ext-code">False</span>.
+            <br>
+            <br>
+            When you compare two values, the expression is evaluated and Python returns the Boolean answer:
+          </p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <code><span class="code-keyword">print</span>(<span class="code-intvariable">10</span> > <span class="code-intvariable">9</span>)
+              <span class="code-keyword">print</span>(<span class="code-intvariable">10</span> == <span class="code-intvariable">9</span>)
+              <span class="code-keyword">print</span>(<span class="code-intvariable">10</span> < <span class="code-intvariable">9</span>)
+            </code>
+          </div>
+          <p>When you run a condition in an if statement, Python returns <span class="ext-code">True</span> or <span class="ext-code">False</span>:</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Print a message based on whether the condition is <span class="ext-code">True</span> or <span class="ext-code">False</span>:</p>
+            <code>a = <span class="code-intvariable">200</span>
+              b = <span class="code-intvariable">33</span>
+              
+              <span class="code-keyword">if</span> b > a:
+              <span class="code-keyword">print</span>(<span class="code-variable">"b is greater than a"</span>)
+              <span class="code-keyword">else</span>:
+              <span class="code-keyword">print</span>(<span class="code-variable">"b is not greater than a"</span>)
+            </code>
+          </div>
+
+          <h3>Evaluate Values and Variables</h3>
+          <p>The <span class="ext-code">bool()</span> function allows you to evaluate any value, and give you <span class="ext-code">True</span> or <span class="ext-code">False</span> in return,</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Evaluate a string and a number:</p>
+            <code><span class="code-keyword">print</span>(<span class="code-keyword">bool</span>(<span class="code-variable">"Hello"</span>))
+              <span class="code-keyword">print</span>(<span class="code-keyword">bool</span>(<span class="code-intvariable">15</span>))
+            </code>
+          </div>
+          <br>
+          <div class="example-container">
+            <p class="text-container">Example</p>
+            <p>Evaluate two variables:</p>
+            <code>x = <span class="code-variable">"Hello"</span>
+              y = <span class="code-intvariable">15</span>
+              
+              <span class="code-keyword">print</span>(<span class="code-keyword">bool</span>(x))
+              <span class="code-keyword">print</span>(<span class="code-keyword">bool</span>(y))
+            </code>
+          </div>
+
+          <h3>Most Values are True</h3>
+          <p>
+            Almost any value is evaluated to <span class="ext-code">True</span> if it has some sort of content.
+            <br>
+            <br>
+            Any string is <span class="ext-code">True</span>, except empty strings.
+            <br>
+            <br>
+            Any number is <span class="ext-code">True</span>, except <span class="ext-code">0</span>.
+            <br>
+            <br>
+            Any list, tuple, set, and dictionary are <span class="ext-code">True</span>, except empty ones.
+          </p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>The following will return True:</p>
+            <code><span class="code-keyword">bool</span>(<span class="code-variable">"abc"</span>)
+              <span class="code-keyword">bool</span>(<span class="code-intvariable">123</span>)
+              <span class="code-keyword">bool</span>([<span class="code-variable">"apple"</span>, <span class="code-variable">"cherry"</span>, <span class="code-variable">"banana"</span>])
+            </code>
+          </div>
+
+          <h3>Some Values are False</h3>
+          <p>In fact, there are not many values that evaluate to <span class="ext-code">False</span>, except empty values, such as <span class="ext-code">()</span>, <span class="ext-code">[]</span>, <span class="ext-code">{}</span>, <span class="ext-code">""</span>, the number <span class="ext-code">0</span>, and the value <span class="ext-code">None</span>. And of course the value <span class="ext-code">False</span> evaluates to <span class="ext-code">False</span>.</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>The following will return False:</p>
+            <code><span class="code-keyword">bool</span>(<span class="code-keyword">False</span>)
+              <span class="code-keyword">bool</span>(None)
+              <span class="code-keyword">bool</span>(<span class="code-intvariable">0</span>)
+              <span class="code-keyword">bool</span>(<span class="code-variable">""</span>)
+              <span class="code-keyword">bool</span>(())
+              <span class="code-keyword">bool</span>([])
+              <span class="code-keyword">bool</span>({})
+            </code>
+          </div>
+          <p>One more value, or object in this case, evaluates to <span class="ext-code">False</span>, and that is if you have an object that is made from a class with a <span class="ext-code">__len__</span> function that returns <span class="ext-code">0</span> or <span class="ext-code">False</span>:</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <code><span class="code-keyword">class</span> myclass():
+              <span class="code-indent"><span class="code-keyword">def</span> __len__(self):</span>
+              <span class="code-indent2"><span class="code-keyword">return</span> <span class="code-intvariable">0</span></span>
+              
+              myobj = myclass()
+              <span class="code-keyword">print</span>(<span class="code-keyword">bool</span>(myobj))
+            </code>
+          </div>
+
+          <h3>Functions can Return a Boolean</h3>
+          <p>You can create functions that returns a Boolean Value:</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Print the answer of a function:</p>
+            <code><span class="code-keyword">def</span> myFunction() :
+              <span class="code-indent"><span class="code-keyword">return True</span></span>
+              
+              <span class="code-keyword">print</span>(myFunction())
+            </code>
+          </div>
+          <p>You can execute code based on the Boolean answer of a function:</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Print "YES!" if the function returns True, otherwise print "NO!":</p>
+            <code><span class="code-keyword">def</span> myFunction() :
+              <span class="code-indent"><span class="code-keyword">return True</span></span>
+              
+              <span class="code-keyword">if</span> myFunction():
+              <span class="code-indent"><span class="code-keyword">print</span>(<span class="code-variable">"YES!"</span>)</span>
+              <span class="code-keyword">else</span>:
+              <span class="code-indent"><span class="code-keyword">print</span>(<span class="code-variable">"NO!"</span>)</span>
+            </code>
+          </div>
+          <p>Python also has many built-in functions that return a boolean value, like the <span class="ext-code">isinstance()</span> function, which can be used to determine if an object is of a certain data type:</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Check if an object is an integer or not:</p>
+            <code>x = <span class="code-intvariable">200</span>
+              <span class="code-keyword">print</span>(<span class="code-keyword">isinstance</span>(x, <span class="code-keyword">int</span>))
+            </code>
+          </div>
+        </article>
+      </section>
+
+
+      <section class="main-section" id="Operators">
+        <header>Operators</header>
+        <article>
+          <h3>Operators</h3>
+          <p>
+            Operators are used to perform operations on variables and values.
+            <br>
+            <br>
+            In the example below, we use the <span class="ext-code">+</span> operator to add together two values:
+          </p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <code><span class="code-keyword">print</span>(<span class="code-intvariable">10</span> + <span class="code-intvariable">5</span>)</code>
+          </div>
+          <p>Python divides the operators in the following groups:</p>
+          <ul>
+            <li>Arithmetic operators</li>
+            <li>Assignment operators</li>
+            <li>Comparison operators</li>
+            <li>Logical operators</li>
+            <li>Identity operators</li>
+            <li>Membership operators</li>
+            <li>Bitwise operators</li>
+          </ul>
+
+          <h3>Python Arithmetic Operators</h3>
+          <p>Arithmetic operators are used with numeric values to perform common mathematical operations:</p>
+          <table>
+            <tr>
+              <th>Operator</th>
+              <th>Name</th>
+              <th>Example</th>
+            </tr>
+            <tr>
+              <td>+</td>
+              <td>Addition</td>
+              <td>x + y</td>
+            </tr>
+            <tr>
+              <td>-</td>
+              <td>Subtraction</td>
+              <td>x - y</td>
+            </tr>
+            <tr>
+              <td>*</td>
+              <td>Multiplication</td>
+              <td>x * y</td>
+            </tr>
+            <tr>
+              <td>/</td>
+              <td>Division</td>
+              <td>x / y</td>
+            </tr>
+            <tr>
+              <td>%</td>
+              <td>Modulus</td>
+              <td>x % y</td>
+            </tr>
+            <tr>
+              <td>**</td>
+              <td>Exponentiation</td>
+              <td>x ** y</td>
+            </tr>
+            <tr>
+              <td>//</td>
+              <td>Floor division</td>
+              <td>x // y</td>
+            </tr>
+          </table>
+
+          <h3>Python Assignment Operators</h3>
+          <p>Assignment operators are used to assign values to variables.</p>
+          <table>
+            <tr>
+              <th>Operator</th>
+              <th>Example</th>
+              <th>Same As</th>
+            </tr>
+            <tr>
+              <td>=</td>
+              <td>x = 5</td>
+              <td>x = 5</td>
+            </tr>
+            <tr>
+              <td>+=</td>
+              <td>x += 3</td>
+              <td>x = x + 3</td>
+            </tr>
+            <tr>
+              <td>-=</td>
+              <td>x -= 3</td>
+              <td>x = x - 3</td>
+            </tr>
+            <tr>
+              <td>*=</td>
+              <td>x *= 3</td>
+              <td>x = x * 3</td>
+            </tr>
+            <tr>
+              <td>/=</td>
+              <td>x /= 3</td>
+              <td>x = x / 3</td>
+            </tr>
+            <tr>
+              <td>%=</td>
+              <td>x %= 3</td>
+              <td>x = x % 3</td>
+            </tr>
+            <tr>
+              <td>//=</td>
+              <td>x //= 3</td>
+              <td>x = x // 3</td>
+            </tr>
+            <tr>
+              <td>**=</td>
+              <td>x **= 3</td>
+              <td>x = x ** 3</td>
+            </tr>
+            <tr>
+              <td>&=</td>
+              <td>x &= 3</td>
+              <td>x = x & 3</td>
+            </tr>
+            <tr>
+              <td>|=</td>
+              <td>x |= 3</td>
+              <td>x = x | 3</td>
+            </tr>
+            <tr>
+              <td>^=</td>
+              <td>x ^= 3</td>
+              <td>x = x ^ 3</td>
+            </tr>
+            <tr>
+              <td>>>=</td>
+              <td>x >>= 3</td>
+              <td>x = x >> 3</td>
+            </tr>
+            <tr>
+              <td><<=</td>
+              <td>x <<= 3</td>
+              <td>x = x << 3</td>
+            </tr>
+          </table>
+
+          <h3>Python Comparison Operators</h3>
+          <p>Comparison operators are used to compare two values:</p>
+          <table>
+            <tr>
+              <th>Operator</th>
+              <th>Name</th>
+              <th>Example</th>
+            </tr>
+            <tr>
+              <td>==</td>
+              <td>Equal</td>
+              <td>x == y</td>
+            </tr>
+            <tr>
+              <td>!=</td>
+              <td>Not equal</td>
+              <td>x != y</td>
+            </tr>
+            <tr>
+              <td>></td>
+              <td>Greater than</td>
+              <td>x > y</td>
+            </tr>
+            <tr>
+              <td><</td>
+              <td>Less than</td>
+              <td>x < y</td>
+            </tr>
+            <tr>
+              <td>>=</td>
+              <td>Greater than or equal to</td>
+              <td>x >= y</td>
+            </tr>
+            <tr>
+              <td><=</td>
+              <td>Less than or equal to</td>
+              <td>x <= y</td>
+            </tr>
+          </table>
+
+          <h3>Python Logical Operators</h3>
+          <p>Logical operators are used to combine conditional statements:</p>
+          <table>
+            <tr>
+              <th>Operator</th>
+              <th>Description</th>
+              <th>Example</th>
+            </tr>
+            <tr>
+              <td>and</td>
+              <td>Returns True if both statements are true</td>
+              <td>x < 5 and x < 10</td>
+            </tr>
+            <tr>
+              <td>or</td>
+              <td>Returns True if one of the statements is true</td>
+              <td>x < 5 or x < 4</td>
+            </tr>
+            <tr>
+              <td>not</td>
+              <td>Reverse the result, returns False if the result is true</td>
+              <td>not(x < 5 and x < 10)</td>
+            </tr>
+          </table>
+
+          <h3>Python Identity Operators</h3>
+          <p>Identity operators are used to compare the objects, not if they are equal, butt if they are actually the same object, with the same memory location:</p>
+          <table>
+            <tr>
+              <th>Operator</th>
+              <th>Description</th>
+              <th>Example</th>
+            </tr>
+            <tr>
+              <td>is</td>
+              <td>Returns True if both variables are the same object</td>
+              <td>x is y</td>
+            </tr>
+            <tr>
+              <td>is not</td>
+              <td>Returns True if both variables are not the same object</td>
+              <td>x is not y</td>
+            </tr>
+          </table>
+
+          <h3>Python Membership Operators</h3>
+          <p>Membership operators are used to test if a sequence is presented in an object:</p>
+          <table>
+            <tr>
+              <th>Operator</th>
+              <th>Description</th>
+              <th>Example</th>
+            </tr>
+            <tr>
+              <td>in</td>
+              <td>Returns True if a sequence with the specified value is present in the object</td>
+              <td>x in y</td>
+            </tr>
+            <tr>
+              <td>not in</td>
+              <td>Returns True if a sequence with the specified value is not present in the object</td>
+              <td>x not in y</td>
+            </tr>
+          </table>
+
+          <h3>Python Bitwise Operators</h3>
+          <p>Bitwise operators are used to compare (binary) numbers:</p>
+          <table>
+            <tr>
+              <th>Operator</th>
+              <th>Name</th>
+              <th>Description</th>
+              <th>Example</th>
+            </tr>
+            <tr>
+              <td>&</td>
+              <td>AND</td>
+              <td>Sets each bit to 1 if both bits are 1</td>
+              <td>x & y</td>
+            </tr>
+            <tr>
+              <td>|</td>
+              <td>OR</td>
+              <td>Sets each bit to 1 if one of two bits is 1</td>
+              <td>x | y</td>
+            </tr>
+            <tr>
+              <td>^</td>
+              <td>XOR</td>
+              <td>Sets each bit to 1 if only one of two bits is 1</td>
+              <td>x ^ y</td>
+            </tr>
+            <tr>
+              <td>~</td>
+              <td>NOT</td>
+              <td>Inverts all the bits</td>
+              <td>~x</td>
+            </tr>
+            <tr>
+              <td><<</td>
+              <td>Zero fill left shift</td>
+              <td>Shift left by pushing zeros in from the right and let the leftmost bits fall off</td>
+              <td>x << 2</td>
+            </tr>
+            <tr>
+              <td>>></td>
+              <td>Signed right shift</td>
+              <td>Shift right by pushing copies of the leftmost bit in from the left, and let the rightmost bits fall off</td>
+              <td>x >> 2</td>
+            </tr>
+          </table>
+
+          <h3>Operator Precedence</h3>
+          <p>Operator precedence describes the order in which operators are performed.</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Parentheses has the highest precedence, meaning that expressions inside parentheses must be evaluated first:</p>
+            <code><span class="code-keyword">print</span>((<span class="code-intvariable">6</span> + <span class="code-intvariable">3</span>) - (<span class="code-intvariable">6</span> + <span class="code-intvariable">3</span>))</code>
+          </div>
+          <br>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Multiplication <span class="ext-code">*</span> has higher precedence than adition <span cclass="ext-code">+</span>, and therefore multiplications are evaluated before additions:</p>
+            <code><span class="code-keyword">print</span>(<span class="code-intvariable">100</span> + <span class="code-intvariable">5</span> * <span class="code-intvariable">3</span>)</code>
+          </div>
+          <p>The precedence order is described in the table below, starting with the highest precendence at the top:</p>
+          <table>
+            <tr>
+              <th>Operator</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td><span class="ext-code">()</span></td>
+              <td>Parentheses</td>
+            </tr>
+            <tr>
+              <td><span class="ext-code">**</span></td>
+              <td>Exponentiation</td>
+            </tr>
+            <tr>
+              <td><span class="ext-code">+x</span> <span class="ext-code">-x</span> <span class="ext-code">~x</span></td>
+              <td>Unary plus, unary minus, and bitwise NOT</td>
+            </tr>
+            <tr>
+              <td><span class="ext-code">*</span> <span class="ext-code">/</span> <span class="ext-code">//</span> <span class="ext-code">%</span></td>
+              <td>Multiplication, division, floor division, and modulus</td>
+            </tr>
+            <tr>
+              <td><span class="ext-code">+</span> <span class="ext-code">-</span></td>
+              <td>Addition and subtraction</td>
+            </tr>
+            <tr>
+              <td><span class="ext-code"><<</span> <span class="ext-code">>></span></td>
+              <td>Bitwise left and right shifts</td>
+            </tr>
+            <tr>
+              <td><span class="ext-code">&</span></td>
+              <td>Bitwise AND</td>
+            </tr>
+            <tr>
+              <td><span class="ext-code">^</span></td>
+              <td>Bitwise XOR</td>
+            </tr>
+            <tr>
+              <td><span class="ext-code">|</span></td>
+              <td>Bitwise OR</td>
+            </tr>
+            <tr>
+              <td><span class="ext-code">==</span> <span class="ext-code">!=</span> <span class="ext-code">></span> <span class="ext-code">>=</span> <span class="ext-code"><</span> <span class="ext-code"><=</span> <span class="ext-code">is</span> <span class="ext-code">is</span> <span class="ext-code">not</span> <span class="ext-code">in</span> <span class="ext-code">not</span> <span class="ext-code">in</span></td>
+              <td>Comparisons, identity, and membership operators</td>
+            </tr>
+            <tr>
+              <td><span class="ext-code">not</span></td>
+              <td>Logical NOT</td>
+            </tr>
+            <tr>
+              <td><span class="ext-code">and</span></td>
+              <td>AND</td>
+            </tr>
+            <tr>
+              <td><span class="ext-code">or</span></td>
+              <td>OR</td>
+            </tr>
+          </table>
+          <p>If two operators have the same precedence, the expression is evaluated from left to right.</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Addition <span class="ext-code">+</span> and subtraction <span class="ext-code">-</span> has the same precedence, and therefor we evaluate the expression from left to right:</p>
+            <code><span class="code-keyword">print</span>(<span class="code-intvariable">5</span> + <span class="code-intvariable">4</span> - <span class="code-intvariable">7</span> + <span class="code-intvariable">3</span>)</code>
+          </div>
+        </article>
+      </section>
+
+
+      <section class="main-section" id="Lists">
+        <header>Lists</header>
+        <article>
+          <h3>Python Lists</h3>
+          <code>mylist = [<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>]</code>
+
+          <h3>List</h3>
+          <p>
+            Lists are used to store multiple items in a single variable.
+            <br>
+            <br>
+            Lists are one of 4 built-in data types in Python used to store collections of data, the other 3 are <a class="text-link" href="#Tuples">Tuple</a>, <a class="text-link" href="#Sets">Set</a>, and <a class="text-link" href="#Dictionaries">Dictionary</a>, all with different qualities and usage.
+            <br>
+            <br>
+            Lists are created using square brackets:
+          </p>
+          <div class="example-container">
+            <p class="text-container">Example</p>
+            <p>Create a List:</p>
+            <code>thislist = [<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>]
+              <span class="code-keyword">print</span>(thislist)
+            </code>
+          </div>
+
+          <h3>List Items</h3>
+          <p>
+            List items are ordered, changeable, and allow duplicate values.
+            <br>
+            <br>
+            List items are indexed, the first item has index <span class="ext-code">[0]</span>, the second item has index <span class="ext-code">[1]</span> etc.
+          </p>
+          
+          <h3>Ordered</h3>
+          <p>
+            When we say that lists are ordered, it means that the items have a defined order, and that order will not change.
+            <br>
+            <br>
+            If you add new items to a list, the new items will be placed at the end of the list.
+          </p>
+          <div class="note-container">
+            <p><b>Note:</b> There are some <!--link?--> list methods that will change the order, but in general: the order of the items will not change.</p>
+          </div>
+
+          <h3>Changeable</h3>
+          <p>The list is changeable, meaning that we can change, add, and remove items in a list after it has been created.</p>
+
+          <h3>Allow Duplicates</h3>
+          <p>Since lists are indexed, lists can have items with the same value:</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Lists allow duplicate values:</p>
+            <code>thislist = [<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>, <span class="code-variable">"apple"</span>, <span class="code-variable">"cherry"</span>]
+              <span class="code-keyword">print</span>(thislist)
+            </code>
+          </div>
+
+          <h3>List Length</h3>
+          <p>To determine how many items a list has, use the <span class="ext-code">len()</span> function:</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Print the number of items in the list:</p>
+            <code>thislist = [<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>]
+              <span class="code-keyword">print</span>(len(thislist))
+            </code>
+          </div>
+
+          <h3>List Items - Data Types</h3>
+          <p>List items can be of any data type:</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>String, int and boolean data types:</p>
+            <code>list1 = [<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>]
+              list2 = [<span class="code-intvariable">1</span>, <span class="code-intvariable">5</span>, <span class="code-intvariable">7</span>, <span class="code-intvariable">9</span>, <span class="code-intvariable">3</span>]
+              list3 = [<span class="code-keyword">True</span>, <span class="code-keyword">False</span>, <span class="code-keyword">False</span>]
+            </code>
+          </div>
+          <p>A list can contain different data types:</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>A list with strings, integers and boolean values:</p>
+            <code>list1 = [<span class="code-variable">"abc"</span>, <span class="code-intvariable">34</span>, <span class="code-keyword">True</span>, <span class="code-intvariable">40</span>, <span class="code-variable">"male"</span>]</code>
+          </div>
+
+          <h3>type()</h3>
+          <p>From Python's perspective, lists are defined as objects with the data type 'list':</p>
+          <code>< class 'list' ></code>
+          <br>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>What is the data type of a list?</p>
+            <code>mylist = [<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>]
+              <span class="code-keyword">print</span>(<span class="code-keyword">type</span>(mylist))
+            </code>
+          </div>
+
+          <h3>The list() Constructor</h3>
+          <p>It is also possible to use the <span class="ext-code">list()</span> constructor when creating a new list.</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Using the <span class="ext-code">list()</span> constructor to make a List:</p>
+            <code>thislist = list((<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>)) <span class="code-comment"># note the double round-brackets</span>
+              <span class="code-keyword">print</span>(thislist)
+            </code>
+          </div>
+
+          <h3>Python Collections (Arrays)</h3>
+          <p>There are four collection data types in the Python programming language:</p>
+          <ul>
+            <li><b>List</b> is a collection which is ordered and changeable. Allows duplicate members.</li>
+            <li><b><a class="text-link" href="#Tuples">Tuple</a></b> is a collection which is ordered and unchangeable. Allows duplicate members.</li>
+            <li><b><a class="text-link" href="#Sets">Set</a></b> is a collection which is unordered, unchangeable*, and unindexed. No duplicate members.</li>
+            <li><b><a class="text-link" href="#Dictionaries">Dictionary</a></b> is a collection which is ordered** and changeable. No duplicate members.</li>
+          </ul>
+          <div class="note-container">
+            <p>
+              *Set <i>items</i> are unchangeable, but you can remove and/or add items whenever you like.
+              <br>
+              <br>
+              **As of Python version 3.7, dictionaries are <i>ordered</i>. In Python 3.6 and earlier, dictionaries are <i>unordered</i>.
+            </p>
+          </div>
+          <p>When choosing a collection type, it is useful to understand the properties of that type. Choosing the right type for a particular data set could mean retention of meaning, and, it could mean an increase in efficiency or security.</p>
+
+          <h3>Access Items</h3>
+          <p>List items are indexed and you can access them by referring to the index number:</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Print the second item of the list:</p>
+            <code>thislist = [<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>]
+              <span class="code-keyword">print</span>(thislist[<span class="code-intvariable">1</span>])
+            </code>
+          </div>
+          <br>
+          <div class="note-container">
+            <p><b>Note:</b> The first item has index 0.</p>
+          </div>
+
+          <h4>Negative Indexing</h4>
+          <p>
+            Negative indexing means start from the end
+            
+            <span class="ext-code">-1</span> refers to the last item, <span class="ext-code">-2</span> refers to the second last item etc.
+          </p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Print the last item of the list:</p>
+            <code>thislist = [<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>]
+              <span class="code-keyword">print</span>(thislist[-<span class="code-intvariable">1</span>])
+            </code>
+          </div>
+
+          <h4>Range of Indexes</h4>
+          <p>
+            You can specify a range of indexes by specifying where to start and where to end the range.
+            <br>
+            <br>
+            When specifying a range, the return value will be a new list with the specified items.
+          </p>
+          <div class="example-container">
+            <p class="text-container">Example</p>
+            <p>Return the third, fourth, and fifth item:</p>
+            <code>thislist = [<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>, <span class="code-variable">"orange"</span>, <span class="code-variable">"kiwi"</span>, <span class="code-variable">"melon"</span>, <span class="code-variable">"mango"</span>]
+              <span class="code-keyword">print</span>(thislist[<span class="code-intvariable">2</span>:<span class="code-intvariable">5</span>])
+            </code>
+          </div>
+          <br>
+          <div class="note-container">
+            <p><b>Note:</b> The search will start at index 2 (included) and end at index 5 (not included).</p>
+          </div>
+          <br>
+          <div class="note-container">
+            <p>Remember that the first item has index 0.</p>
+          </div>
+          <p>By leaving out the start value, the range will start at the first item:</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>This example returns the items from the beginning to, but NOT including, "kiwi":</p>
+            <code>thislist = [<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>, <span class="code-variable">"orange"</span>, <span class="code-variable">"kiwi"</span>, <span class="code-variable">"melon"</span>, <span class="code-variable">"mango"</span>]
+              <span class="code-keyword">print</span>(thislist[:<span class="code-intvariable">4</span>])
+            </code>
+          </div>
+          <p>By leaving out the end value, the range will go on to the end of the list:</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>This example returns the items from "cherry" to the end:</p>
+            <code>thislist = [<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>, <span class="code-variable">"orange"</span>, <span class="code-variable">"kiwi"</span>, <span class="code-variable">"melon"</span>, <span class="code-variable">"mango"</span>]
+              <span class="code-keyword">print</span>(thislist[<span class="code-intvariable">2</span>:])
+            </code>
+          </div>
+
+          <h4>Range of Negative Indexes</h4>
+          <p>Specify negative indexes if you want to start the search from the end of the list:</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>This example returns the items from "orange" (-4) to, but NOT including "mango" (-1):</p>
+            <code>thislist = [<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>, <span class="code-variable">"orange"</span>, <span class="code-variable">"kiwi"</span>, <span class="code-variable">"melon"</span>, <span class="code-variable">"mango"</span>]
+              <span class="code-keyword">print</span>(thislist[-<span class="code-intvariable">4</span>:-<span class="code-intvariable">1</span>])
+            </code>
+          </div>
+
+          <h3>Check if Item Exists</h3>
+          <p>To determine if a specified item is present in a list use the <span class="ext-code">in</span> keyword:</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Check if "apple" is present in the list:</p>
+            <code>thislist = [<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>]
+              <span class="code-keyword">if</span> <span class="code-variable">"apple"</span> <span class="code-keyword">in</span> thislist:
+              <span class="code-indent"><span class="code-keyword">print</span>(<span class="code-variable">"Yes, 'apple' is in the fruits list"</span>)</span>
+            </code>
+          </div>
+
+          <h3>Change Item Value</h3>
+          <p>To change the value of a specific item, refer to the index number:</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Change the second item:</p>
+            <code>thislist = [<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>]
+              thislist[<span class="code-intvariable">1</span>] = <span class="code-variable">"blackcurrant"</span>
+              <span class="code-keyword">print</span>(thislist)
+
+              Output: ['apple', 'blackcurrant', 'cherry']
+            </code>
+          </div>
+
+          <h3>Change a Range of Item Values</h3>
+          <p>To change the value of items within a specific range, define a list with the new values, and refer to the range of index numbers where you want to insert the new values:</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Change the values "banana" and "cherry" with the values "blackcurrant" and "watermelon":</p>
+            <code>thislist = [<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>, <span class="code-variable">"orange"</span>, <span class="code-variable">"kiwi"</span>, <span class="code-variable">"mango"</span>]
+              thislist[<span class="code-intvariable">1</span>:<span class="code-intvariable">3</span>] = [<span class="code-variable">"blackcurrant"</span>, <span class="code-variable">"watermelon"</span>]
+              <span class="code-keyword">print</span>(thislist)
+
+              Output: ['apple', 'blackcurrant', 'watermelon', 'orange', 'kiwi', 'mango']
+            </code>
+          </div>
+          <p>If you insert <i>more</i> items than you replace, the new items will be inserted where you specified, and the remaining items will move accordingly:</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Change the second value by replacing it with two <i>new</i> values:</p>
+            <code>thislist = [<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>]
+              thislist[<span class="code-intvariable">1</span>:<span class="code-intvariable">2</span>] = [<span class="code-variable">"blackcurrant"</span>, <span class="code-variable">"watermelon"</span>]
+              <span class="code-keyword">print</span>(thislist)
+
+              Output: ['apple', 'blackcurrant', 'watermelon', 'cherry']
+            </code>
+          </div>
+          <br>
+          <div class="note-container">
+            <p><b>Note:</b> The length of the list will change when the number of items inserted does not match the number of items replaced.</p>
+          </div>
+          <p>If you insert <i>less</i> items than you replace, the new items will be inserted where you specified, and the remaining items will move accordingly:</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Change the second and third value by replacing it with one value:</p>
+            <code>thislist = [<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>]
+              thislist[<span class="code-intvariable">1</span>:<span class="code-intvariable">3</span>] = [<span class="code-variable">"watermelon"</span>]
+              <span class="code-keyword">print</span>(thislist)
+
+              Output: ['apple', 'watermelon']
+            </code>
+          </div>
+
+          <h3>Insert Items</h3>
+          <p>
+            To insert a new list item, without replacing any of the existing values, we can use the <span class="ext-code">insert()</span> method.
+            <br>
+            <br>
+            The <span class="ext-code">insert()</span> method inserts an item at the specified index:
+          </p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Insert "watermelon" as the third item:</p>
+            <code>thislist = [<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>]
+              thislist.insert(<span class="code-intvariable">2</span>, <span class="code-variable">"watermelon"</span>)
+              <span class="code-keyword">print</span>(thislist)
+
+              Output: ['apple', 'banana', 'watermelon', 'cherry']
+            </code>
+          </div>
+          <br>
+          <div class="note-container">
+            <p><b>Note:</b> As a result of the example above, the list will now contain 4 items.</p>
+          </div>
+
+          <h3>Append Items</h3>
+          <p>To add an item to the end of the list, use the <span class="ext-code">append()</span> method:</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Using the <span class="ext-code">append()</span> method to append an item:</p>
+            <code>thislist = [<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>]
+              thislist.append(<span class="code-variable">"orange"</span>)
+              <span class="code-keyword">print(thislist)
+
+              Output: ['apple', 'banana', 'cherry', 'orange']
+            </code>
+          </div>
+
+          <h3>Insert Items</h3>
+          <p>
+            To insert a list item at a specified index, use the <span class="ext-code">insert()</span> method.
+            <br>
+            <br>
+            The <span class="ext-code">insert()</span> method inserts an item at the specified index:
+          </p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Insert an item as the second position:</p>
+            <code>thislist = [<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>]
+              thislist.insert(<span class="code-intvariable">1</span>, <span class="code-variable">"orange"</span>)
+              <span class="code-keyword">print</span>(thislist)
+
+              Output: ['apple', 'orange', 'banana', 'cherry']
+            </code>
+          </div>
+          <br>
+          <div class="note-container">
+            <p><b>Note:</b> As a result of the examples above, the lists will now contain 4 items.</p>
+          </div>
+
+          <h3>Extend List</h3>
+          <p>To append elements from <i>another</i> list to the current list, use the <span class="ext-code">extend()</span> method.</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Add the elements of <span class="ext-coded">tropical</span> to <span class="ext-coded">thislist</span>:</p>
+            <code>thislist = [<span class="code variable">"apple"</span>, <span class="code variable">"banana"</span>, <span class="code variable">"cherry"</span>]
+              tropical = [<span class="code variable">"mango"</span>, <span class="code variable">"pineapple"</span>, <span class="code variable">"papaya"</span>]
+              thislist.extend(tropical)
+              <span class="code-keyword">print</span>(thislist)
+
+              Output: ['apple', 'banana', 'cherry', 'mango', 'pineapple', 'papaya']
+            </code>
+          </div>
+          <p>The elements will be added to the <i>end</i> of the list.</p>
+
+          <h3>Add Any Iterable</h3>
+          <p>The <span class="ext-code">extend()</span> method does not have to append lists, you can add any iterable object (tuples, sets, dictionaries etc.).</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Add elements of a tuple to a list:</p>
+            <code>thislist = [<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>]
+              thistuple = (<span class="code-variable">"kiwi"</span>, <span class="code-variable">"orange"</span>)
+              thislist.extend(thistuple)
+              <span class="code-keyword">print</span>(thislist)
+
+              Output: ['apple', 'banana', 'cherry', 'kiwi', 'orange']
+            </code>
+          </div>
+
+          <h3>Remove Specified Item</h3>
+          <p>The <span class="ext-code">remove()</span> method removes the specified item.</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Remove "banana":</p>
+            <code>thislist = [<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>]
+              thislist.remove(<span class="code-variable">"banana"</span>)
+              <span class="code-keyword">print</span>(thislist)
+
+              Output: ['apple', 'cherry']
+            </code>
+          </div>
+
+          <h3>Remove Specified Index</h3>
+          <p>The <span class="ext-code">pop()</span> method removes the specified index.</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Remove the second item:</p>
+            <code>thislist = [<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>]
+              thislist.pop(<span class="code-intvariable">1</span>)
+              <span class="code-keyword">print</span>(thislist)
+
+              Output: ['apple', 'cherry']
+            </code>
+          </div>
+          <p>If you do not specify the index, the <span class="ext-code">pop()</span> method removes the last item.</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Remove the last item:</p>
+            <code>thislist = [<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>]
+              thislist.pop()
+              <span class="code-keyword">print</span>(thislist)
+
+              Output: ['apple', 'banana']
+            </code>
+          </div>
+          <p>The <span class="ext-code">del</span> keyword also removes the specified index:</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Remove the first item:</p>
+            <code>thislist = [<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>]
+              <span class="code-keyword">del</span> thislist[<span class="code-intvariable">0</span>]
+              <span class="code-keyword">print</span>(thislist)
+
+              Output: ['banana', 'cherry']
+            </code>
+          </div>
+          <p>The <span class="ext-code">del</span> keyword can also delete the list completely.</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Delete the entire list:</p>
+            <code>thislist = [<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>]
+              <span class="code-keyword">del</span> thislist
+              <span class="code-keyword">print</span>(thislist) <span class="code-comment">#this will cause an error because you have succsesfully deleted "thislist".</span>
+            </code>
+          </div>
+
+          <h3>Clear the List</h3>
+          <p>
+            The <span class="ext-code">clear()</span> method empties the list.
+            <br>
+            <br>
+            The list still remains, but it has no content.
+          </p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Clear the list content:</p>
+            <code>thislist = [<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>]
+              thislist.clear()
+              <span class="code-keyword">print</span>(thislist)
+
+              Output: []
+            </code>
+          </div>
+
+          <h3>Loop Through a List</h3>
+          <p>You can loop through the list items by using a for <span class="ext-code">loop</span>:</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Print all items in the list, one by one:</p>
+            <code>thislist = [<span class="code-variable">"apple", <span class="code-variable">"banana", <span class="code-variable">"cherry"]
+              <span class="code-keyword">for</span> x <span class="code-keyword">in</span> thislist:
+              <span class="code-indent"><span class="code-keyword">print</span>(x)</span>
+            </code>
+          </div>
+
+          <h3>Loop Through the Index Numbers</h3>
+          <p>
+            You can also loop through the list items by referring to their index number.
+            <br>
+            <br>
+            Use the <span class="ext-code">range()</span> and <span class="ext-code">len()</span> functions to create a suitable iterable.
+          </p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Print all items by referring to their index number:</p>
+            <code>thislist = [<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>]
+              <span class="code-keyword">for</span> i <span class="code-keyword">in range</span>(<span class="code-keyword">len</span>(thislist)):
+              <span class="code-indent"><span class="code-keyword">print</span>(thislist[i])</span>
+            </code>
+          </div>
+          <p>The iterable created in the example above is <span class="ext-code">[0, 1, 2]</span>.</p>
+
+          <h3>Using a While Loop</h3>
+          <p>
+            You can loop through the list items by using a <span class="ext-code">while</span> loop.
+            <br>
+            <br>
+            Use the <span class="ext-code">len()</span> function to determine the length of the list, then start at 0 and loop your way through the list items by referring to their indexes.
+            <br>
+            <br>
+            Remember to increase the index by 1 after each iteration.
+          </p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Print all items, using a <span class="ext-code">while</span> loop to go through all the index numbers</p>
+            <code>thislist = [<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>]
+              i = <span class="code-intvariable">0</span>
+              <span class="code-keyword">while</span> i < <span class="code-keyword">len</span>(thislist): 
+              <span class="code-indent"><span class="code-keyword">print</span>(thislist[i])</span> 
+              <span class="code-indent">i=i + <span class="code-intvariable">1</span></span>
+            </code>
+          </div>
+
+          <h3>Looping Using List Comprehension</h3>
+          <p>List Comprehension offers the shortest syntax for looping through lists:</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>A short hand <span class="ext-code">for</span> loop that will print all items in a list:</p>
+            <code>thislist = [<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>]
+              [<span class="code-keyword">print</span>(x) <span class="code-keyword">for</span> x <span class="code-keyword">in</span> thislist]
+            </code>
+          </div>
+
+          <h3>List Comprehension</h3>
+          <p>
+            List comprehension offers a shorter syntax when you want to create a new list based on the values of an existing list.
+            <br>
+            <br>
+            Example:
+            <br>
+            <br>
+            Based on a list of fruits, you want a new list, containing only the fruits with the letter "a" in the name.
+            <br>
+            <br>
+            Without list comprehension you will have to write a <span class="ext-code">for</span> statement with a conditional test inside:
+          </p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <code>fruits = [<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>, <span class="code-variable">"kiwi"</span>, <span class="code-variable">"mango"</span>]
+              newlist = []
+              
+              <span class="code-keyword">for</span> x <span class="code-keyword">in</span> fruits:
+              <span class="code-indent"><span class="code-keyword">if</span> <span class="code-variable">"a"</span> <span class="code-keyword">in</span> x:</span>
+              <span class="code-indent2">newlist.append(x)</span>
+              
+              <span class="code-keyword">print</span>(newlist)
+            </code>
+          </div>
+          <p>With list comprehension you can do all that with only one line of code:</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <code>fruits = [<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>, <span class="code-variable">"kiwi"</span>, <span class="code-variable">"mango"</span>]
+              newlist = [x <span class="code-keyword">for</span> x <span class="code-keyword">in</span> fruits <span class="code-keyword">if</span> <span class="code-variable">"a"</span> <span class="code-keyword">in</span> x]
+              <span class="code-keyword">print</span>(newlist)
+            </code>
+          </div>
+
+          <h3>The Syntax</h3>
+          <code>newlist = [<i>expression</i> <span class="code-keyword">for</span> <i>item</i> <span class="code-keyword">in</span> <i>iterable</i> <span class="code-keyword">if</span> <i>condition</i> == <span class="code-keyword">True</span>]</code>
+          <p>The return value is a new list, leaving the old list unchanged.</p>
+
+          <h4>Condition</h4>
+          <p>The <i>condition</i> is like a filter that only accepts the items that valuate to <span class="ext-code">True</span>.</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Only accept items that are not "apple":</p>
+            <code>fruits = [<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>, <span class="code-variable">"kiwi"</span>, <span class="code-variable">"mango"</span>]
+              newlist = [x <span class="code-keyword">for</span> x <span class="code-keyword">in</span> fruits <span class="code-keyword">if</span> x != <span class="code-variable">"apple"</span>]
+              <span class="code-keyword">print</span>(newlist)
+            </code>
+          </div>
+          <p>
+            The condition <span class="ext-code">if x != "apple"</span> will return <span class="ext-code">True</span> for all elements other than "apple", making the new list contain all
+            fruits except "apple".
+            <br>
+            <br>
+            The <i>condition</i> is optional and can be omitted:
+          </p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>With no <span class="ext-code">if</span> statement:</p>
+            <code>fruits = [<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span
+              class="code-variable">"cherry"</span>, <span class="code-variable">"kiwi"</span>, <span
+              class="code-variable">"mango"</span>]
+              newlist = [x <span class="code-keyword">for</span> x <span class="code-keyword">in</span> fruits]
+              <span class="code-keyword">print</span>(newlist)
+            </code>
+          </div>
+
+          <h4>Iterable</h4>
+          <p>The <i>iterable</i> can be any iterable object, like a list, tuple, set etc.</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>You can use the <span class="ext-code">range()</span> function to create an iterable:</p>
+            <code>newlist = [x <span class="code-keyword">for</span> x <span class="code-keyword">in</span> range(<span class="code-intvariable">10</span>)]
+              <span class="code-keyword">print</span>(newlist)
+            </code>
+          </div>
+          <p>Same example, but with a condition:</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Accept only numbers lower than 5:</p>
+            <code>newlist = [x <span class="code-keyword">for</span> x <span class="code-keyword">in</span> range(<span class="code-intvariable">10</span>) <span class="code-keyword">if</span> x < <span class="code-intvariable">5</span>] 
+              <span class="code-keyword">print</span>(newlist)
+            </code>
+          </div>
+
+          <h4>Expression</h4>
+          <p>The <i>expression</i> is the current item in the iteration, but it is also the outcome, which you can manipulate before it ends up like a list item in the new list:</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Set the values in the new list to upper case:</p>
+            <code>fruits = [<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>, <span class="code-variable">"kiwi"</span>, <span class="code-variable">"mango"</span>]
+              newlist = [x.upper() <span class="code-keyword">for</span> x <span class="code-keyword">in</span> fruits]
+              <span class="code-keyword">print</span>(newlist)
+            </code>
+          </div>
+          <p>You can set the outcome to whatever you like:</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Set all values in the new list to 'hello':</p>
+            <code>fruits = [<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>, <span class="code-variable">"kiwi"</span>, <span class="code-variable">"mango"</span>]
+              newlist = [<span class="code-variable">'hello'</span> <span class="code-keyword">for</span> x <span class="code-keyword">in</span> fruits]
+              <span class="code-keyword">print<</span>(newlist)
+            </code>
+          </div>
+          <p>The <i>expression</i> can also contain conditions, not like a filter, but as a way to manipulate the outcome:</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Return "orange" instead of "banana":</p>
+            <code>fruits = [<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>, <span class="code-variable">"kiwi"</span>, <span class="code-variable">"mango"</span>]
+              newlist = [x <span class="code-keyword">if</span> x != <span class="code-variable">"banana"</span> <span class="code-keyword">else</span> <span class="code-variable">"orange"</span> <span class="code-keyword">for</span> x <span class="code-keyword">in</span> fruits]
+              <span class="code-keyword">print</span>(newlist)
+            </code>
+          </div>
+          <p>
+            The <i>expression</i> in the example above says:
+            <br>
+            <br>
+            <i>"Return the item if it is not banana, if it is banana return orange".</i>
+          </p>
+
+          <h3>Sort List Alphanumerically</h3>
+          <p>List objects have a <span class="ext-code">sort()</span> method that will sort the list alphanumerically, ascending, by default:</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Sort the list alphabetically:</p>
+            <code>thislist = [<span class="code-variable">"orange"</span>, <span class="code-variable">"mango"</span>, <span class="code-variable">"kiwi"</span>, <span class="code-variable">"pineapple"</span>, <span class="code-variable">"banana"</span>]
+              thislist.sort()
+              <span class="code-keyword">print</span>(thislist)
+            </code>
+          </div>
+          <br>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Sort the list numerically:</p>
+            <code>thislist = [<span class="code-intvariable">100</span>, <span class="code-intvariable">50</span>, <span class="code-intvariable">65</span>, <span class="code-intvariable">82</span>, <span class="code-intvariable">23</span>]
+              thislist.sort()
+              <span class="code-keyword">print</span>(thislist)
+            </code>
+          </div>
+
+          <h3>Sort Descending</h3>
+          <p>To sort descending, use the keyword argument <span class="ext-code">reverse = True</span>:</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Sort the list descending:</p>
+            <code>thislist = [<span class="code-variable">"orange"</span>, <span class="code-variable">"mango"</span>, <span class="code-variable">"kiwi"</span>, <span class="code-variable">"pineapple"</span>, <span class="code-variable">"banana"</span>]
+              thislist.sort(reverse = <span class="code-keyword">True</span>)
+              <span class="code-keyword">print</span>(thislist)
+            </code>
+          </div>
+          <br>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Sort the list descending:</p>
+            <code>thislist = [<span class="code-intvariable">100</span>, <span class="code-intvariable">50</span>, <span class="code-intvariable">65</span>, <span class="code-intvariable">82</span>, <span class="code-intvariable">23</span>]
+              thislist.sort(reverse = <span class="code-keyword">True</span>)
+              <span class="code-keyword">print</span>(thislist)
+            </code>
+          </div>
+
+          <h3>Customize Sort Function</h3>
+          <p>
+            You can also customize your own function by using the keyword argument <span class="ext-code">key = function</span>.
+            <br>
+            <br>
+            The function will return a number that will be used to sort the list (the lowest number first):
+          </p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Sort the list based on how close the number is to 50:</p>
+            <code><span class="code-keyword">def</span> myfunc(n):
+              <span class="code-indent"><span class="code-keyword">return abs</span>(n - <span class="code-intvariable">50</span>)</span>
+              
+              thislist = [<span class="code-intvariable">100</span>, <span class="code-intvariable">50</span>, <span class="code-intvariable">65</span>, <span class="code-intvariable">82</span>, <span class="code-intvariable">23</span>]
+              thislist.sort(key = myfunc)
+              <span class="code-keyword">print</span>(thislist)
+            </code>
+          </div>
+
+          <h3>Case Insensitive Sort</h3>
+          <p>By default the <span class="ext-code">sort()</span> method is case sensitive, resulting in all capital letters being sorted before lower case letters:</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Case sensitive sorting can give an unexpected result:</p>
+            <code>thislist = [<span class="code-variable">"banana"</span>, <span class="code-variable">"Orange"</span>, <span class="code-variable">"Kiwi"</span>, <span class="code-variable">"cherry"</span>]
+              thislist.sort()
+              <span class="code-keyword">print</span>(thislist)
+            </code>
+          </div>
+          <p>
+            Luckily we can use built-in functions as key functions when sorting a list.
+            <br>
+            <br>
+            So if you want a case-insensitive sort function, use str.lower as a key function:
+          </p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Perform a case-insensitive sort of the list:</p>
+            <code>thislist = [<span class="code-variable">"banana"</span>, <span class="code-variable">"Orange"</span>, <span class="code-variable">"Kiwi"</span>, <span class="code-variable">"cherry"</span>]
+              thislist.sort(key = <span class="code-keyword">str</span>.lower)
+              <span class="code-keyword">print</span>(thislist)
+            </code>
+          </div>
+
+          <h3>Reverse Order</h3>
+          <p>
+            What if you want to reverse the order of a list, regardless of the alphabet?
+            <br>
+            <br>
+            The <span class="ext-code">reverse()</span> method reverses the current sorting order of the elements.
+          </p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Reverse the order of the list items:</p>
+            <code>thislist = [<span class="code-variable">"banana"</span>, <span class="code-variable">"Orange"</span>, <span class="code-variable">"Kiwi"</span>, <span class="code-variable">"cherry"</span>]
+              thislist.reverse()
+              <span class="code-keyword">print</span>(thislist)
+            </code>
+          </div>
+
+          <h3>Copy Lists</h3>
+          <p>
+            You cannot copy a list simply by typing <span class="ext-code">list2 = list1</span>, because: <span class="ext-code">list2</span> will only be a reference to <span class="ext-code">list1</span>, and changes made in <span class="ext-code">list1</span> will automatically also be made in <span class="ext-code">list2</span>.
+            <br>
+            <br>
+            There are ways to make a copy, one way is to use the built-in List method <span class="ext-code">copy()</span>.
+          </p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Make a copy of a list with the <span class="ext-code">copy()</span> method:</p>
+            <code>thislist = [<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>]
+              mylist = thislist.copy()
+              <span class="code-keyword">print</span>(mylist)
+            </code>
+          </div>
+          <p>Another way to make a copy is to use the built-in method <span class="ext-code">list()</span>.</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Make a copy of a list with the <span class="ext-code">list()</span> method:</p>
+            <code>thislist = [<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>]
+              mylist = <span class="code-keyword">list</span>(thislist)
+              <span class="code-keyword">print</span>(mylist)
+            </code>
+          </div>
+
+          <h3>Join Two Lists</h3>
+          <p>
+            There are several ways to join, or concatenate, two or more lists in Python.
+            <br>
+            <br>
+            One of the easiest ways are by using the <span class="ext-code">+</span> operator.
+          </p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Join two list:</p>
+            <code>list1 = [<span class="code-variable">"a"</span>, <span class="code-variable">"b"</span>, <span class="code-variable">"c"</span>]
+              list2 = [<span class="code-intvariable">1</span>, <span class="code-intvariable">2</span>, <span class="code-intvariable">3</span>]
+              
+              list3 = list1 + list2
+              <span class="code-keyword">print</span>(list3)
+            </code>
+          </div>
+          <p>Another way to join two lists is by appending all the items from list2 into list1, one by one:</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Append list2 into list1:</p>
+            <code>list1 = <span class="code-variable">"a"</span>, <span class="code-variable">"b"</span> , <span class="code-variable">"c"</span>]
+              list2 = [<span class="code-intvariable">1</span>, <span class="code-intvariable">2</span>, <span class="code-intvariable">3</span>]
+              
+              <span class="code-keyword">for</span> x <span class="code-keyword">in</span> list2:
+              <span class="code-indent">list1.append(x)</span>
+              
+              <span class="code-keyword">print</span>(list1)
+            </code>
+          </div>
+          <p>Or you can use the <span class="ext-code">extend()</span> method, which purpose is to add elements from one list to another list:</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Use the <span class="ext-code">extend()</span> method to add list2 at the end of list1:</p>
+            <code>list1 = [<span class="code-variable">"a"</span>, <span class="code-variable">"b"</span>, <span class="code-variable">"c"</span>]
+              list2 = [<span class="code-intvariable">1</span>, <span class="code-intvariable">2</span>, <span class="code-intvariable">3</span>]
+              
+              list1.extend(list2)
+              <span class="code-keyword">print</span>(list1)
+            </code>
+          </div>
+
+          <h3>List Methods</h3>
+          <p>Python has a set of built-in methods that you can use on lists.</p>
+          <table>
+            <tr>
+              <th>Method</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>append()</td>
+              <td>Adds an element at the end of the list</td>
+            </tr>
+            <tr>
+              <td>clear()</td>
+              <td>Removes all the elements from the list</td>
+            </tr>
+            <tr>
+              <td>copy()</td>
+              <td>Returns a copy of the list</td>
+            </tr>
+            <tr>
+              <td>count()</td>
+              <td>Returns the number of elements with the specified value</td>
+            </tr>
+            <tr>
+              <td>extend()</td>
+              <td>Add the elements of a list (or any iterable), to the end of the current list</td>
+            </tr>
+            <tr>
+              <td>index()</td>
+              <td>Returns the index of the first element with the specified value</td>
+            </tr>
+            <tr>
+              <td>insert()</td>
+              <td>Adds an element at the specified position</td>
+            </tr>
+            <tr>
+              <td>pop()</td>
+              <td>Removes the element at the specified position</td>
+            </tr>
+            <tr>
+              <td>remove()</td>
+              <td>Removes the item with the specified value</td>
+            </tr>
+            <tr>
+              <td>reverse()</td>
+              <td>Reverses the order of the list</td>
+            </tr>
+            <tr>
+              <td>sort()</td>
+              <td>Sorts the list</td>
+            </tr>
+          </table>
+        </article>
+      </section>
+
+
+      <section class="main-section" id="Tuples">
+        <header>Tuples</header>
+        <article>
+          <code>mytuple = (<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>)</code>
+
+          <h3>Tuple</h3>
+          <p>
+            Tuples are used to store multiple items in a single variable.
+            <br>
+            <br>
+            Tuple is one of 4 built-in data types in Python used to store collections of data, the other 3 are <a class="text-link" href="#Lists">List</a>, <a class="text-link" href="#Sets">Set</a>, and <a class="text-link" href="#Dictionaries">Dictionary</a>, all with different qualities and usage.
+            <br>
+            <br>
+            A tuple is a collection which is ordered and <b>unchangeable</b>.
+            <br>
+            <br>
+            Tuples are written with round brackets.
+          </p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Create a Tuple:</p>
+            <code>thistuple = (<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>)
+              <span class="code-keyword">print</span>(thistuple)
+            </code>
+          </div>
+
+          <h3>Tuple Items</h3>
+          <p>
+            Tuple items are ordered, unchangeable, and allow duplicate values.
+            <br>
+            <br>
+            Tuple items are indexed, the first item has index <span class="ext-code">[0]</span>, the second item has index <span class="ext-code">[1]</span> etc.
+          </p>
+
+          <h3>Ordered</h3>
+          <p>When we say that tuples are ordered, it means that the items have a defined order, and that order will not change.</p>
+
+          <h3>Unchangeable</h3>
+          <p>Tuples are unchangeable, meaning that we cannot change, add or remove items after the tuple has been created.</p>
+
+          <h3>Allow Duplicates</h3>
+          <p>Since tuples are indexed, they can have items with the same value:</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Tuples allow duplicate values:</p>
+            <code>thistuple = (<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>, <span class="code-variable">"apple"</span>, <span class="code-variable">"cherry"</span>)
+              <span class="code-keyword">print</span>(thistuple)
+            </code>
+          </div>
+
+          <h3>Tuple Length</h3>
+          <p>To determine how many items a tuple has, use the <span class="ext-code">len()</span> function:</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Print the number of items in the tuple:</p>
+            <code>thistuple = (<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>)
+              <span class="code-keyword">print</span>(<span class="code-keyword">len</span>(thistuple))
+            </code>
+          </div>
+
+          <h3>Create Tuple With One Item</h3>
+          <p>To create a tuple with only one item, you have to add a comma after the item, otherwise Python will not recognize it as a tuple.</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>One item tuple, remember the comma:</p>
+            <code>thistuple = (<span class="code-variable">"apple"</span>,)
+              <span class="code-keyword">print</span>(<span class="code-keyword">type</span>(</span>thistuple))
+              
+              <span class="code-comment">#NOT a tuple</span>
+              thistuple = (<span class="code-variable">"apple"</span>)
+              <span class="code-keyword">print</span>(<span class="code-keyword">type</span>(</span>thistuple))
+            </code>
+          </div>
+
+          <h3>Tuple Items - Data Types</h3>
+          <p>Tuple items can be of any data type:</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>String, int and boolean data types:</p>
+            <code>tuple1 = (<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>)
+              tuple2 = (<span class="code-intvariable">1</span>, <span class="code-intvariable">5</span>, <span class="code-intvariable">7</span>, <span class="code-intvariable">9</span>, <span class="code-intvariable">3</span>)
+              tuple3 = (<span class="code-keyword">True</span>, <span class="code-keyword">False</span>, <span class="code-keyword">False</span>)
+            </code>
+          </div>
+          <p>A tuple can contain different data types:</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>A tuple with strings, integers and boolean values:</p>
+            <code>tuple1 = (<span class="code-variable">"abc"</span>, <span class="code-intvariable">34</span>, <span class="code-keyword">True</span>, <span class="code-intvariable">40</span>, <span class="code-variable">"male"</span>)</code>
+          </div>
+
+          <h3>type()</h3>
+          <p>From Python's perspective, tuples are defined as objects with the data type 'tuple':</p>
+          <code>< class 'tuple' ></code>
+          <br>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>What is the data type of a tuple?</p>
+            <code>mytuple = (<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>)
+              <span class="code-keyword">print</span>(type(mytuple))
+            </code>
+          </div>
+
+          <h3>The tuple() Constructor</h3>
+          <p>It is also possible to use the <span class="ext-code">tuple()</span> constructor to make a tuple</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Using the tuple() method to make a tuple:</p>
+            <code>thistuple = tuple((<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>)) <span class="code-comment"># note the double round-brackets</span>
+              <span class="code-keyword">print</span>(thistuple)
+            </code>
+          </div>
+
+          <h3>Python Collections (Arrays)</h3>
+          <p>There are four collection data types in the Python programming language:</p>
+          <ul>
+            <li><a class="text-link" href="#Lists"><b>List</b></a> is a collection which is ordered and changeable. Allows duplicate members.</li>
+            <li><b>Tuple</b> is a collection which is ordered and unchangeable. Allows duplicate members.</li>
+            <li><a class="text-link" href="#Sets"><b>Set</b></a> is a collection which is unordered, unchangeable*, and unindexed. No duplicate members.</li>
+            <li><a class="text-link" href="#Dictionaries"><b>Dictionary</b></a> is a collection which is ordered** and changeable. No duplicate members.</li>
+          </ul>
+          <div class="note-container">
+            <p>
+              *Set <i>items</i> are unchangeable, but you can remove and/or add items whenever you like.
+              <br>
+              <br>
+              **As of Python version 3.7, dictionaries are <i>ordered</i>. In Python 3.6 and earlier, dictionaries are <i>unordered</i>.
+            </p>
+          </div>
+          <p>
+            When choosing a collection type, it is useful to understand the properties of that type. Choosing the right type for a
+            particular data set could mean retention of meaning, and, it could mean an increase in efficiency or security.
+          </p>
+
+          <h3>Access Tuple Items</h3>
+          <p>You can access tuple items by referring to the index number, inside square brackets:</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Print the second item in the tuple:</p>
+            <code>thistuple = (<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>)
+              <span class="code-keyword">print</span>(thistuple[<span class="code-intvariable">1</span>])
+            </code>
+          </div>
+          <br>
+          <div class="note-container">
+            <p><b>Note:</b> The first item has index 0.</p>
+          </div>
+
+          <h3>Negative Indexing</h3>
+          <p>
+            Negative indexing means start from the end.
+            <br>
+            <br>
+            <span class="ext-code">-1</span> refers to the last item, <span class="ext-code">-2</span> refers to the second last item etc.
+          </p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Print the last item of the tuple:</p>
+            <code>thistuple = (<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>)
+              <span class="code-keyword">print(thistuple[-<span class="code-intvariable">1</span>])
+            </code>
+          </div>
+
+          <h3>Range of Indexes</h3>
+          <p>
+            You can specify a range of indexes by specifying where to start and where to end the range.
+            <br>
+            <br>
+            When specifying a range, the return value will be a new tuple with the specified items.
+          </p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Return the third, fourth, and fifth item:</p>
+            <code>thistuple = (<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>, <span class="code-variable">"orange"</span>, <span class="code-variable">"kiwi"</span>, <span class="code-variable">"melon"</span>, <span class="code-variable">"mango"</span>)
+              <span class="code-keyword">print</span>(thistuple[<span class="code-intvariable">2</span>:<span class="code-intvariable">5</span>])
+            </code>
+          </div>
+          <br>
+          <div class="note-container">
+            <p><b>Note:</b> The search will start at index 2 (included) and end at index 5 (not included).</p>
+          </div>
+          <br>
+          <div class="note-container">
+            <p>Remember that the first item has index 0.</p>
+          </div>
+          <p>By leaving out the start value, the range will start at the first item:</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>This example returns the items from the beginning to, but NOT included, "kiwi":</p>
+            <code>thistuple = (<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>, <span class="code-variable">"orange"</span>, <span class="code-variable">"kiwi"</span>, <span class="code-variable">"melon"</span>, <span class="code-variable">"mango"</span>)
+              <span class="code-keyword">print</span>(thistuple[:<span class="code-intvariable">4</span>])
+            </code>
+          </div>
+          <p>By leaving out the end value, the range will go on to the end of the list:</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>This example returns the items from "cherry" and to the end:</p>
+            <code>thistuple = (<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>, <span class="code-variable">"orange"</span>, <span class="code-variable">"kiwi"</span>, <span class="code-variable">"melon"</span>, <span class="code-variable">"mango"</span>)
+              <span class="code-keyword">print</span>(thistuple[<span class="code-intvariable">2</span>:])
+            </code>
+          </div>
+
+          <h3>Range of Negative Indexes</h3>
+          <p>Specify negative indexes if you want to start the search from the end of the tuple:</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>This example returns the items from index -4 (included) to index -1 (excluded)</p>
+            <code>thistuple = (<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>, <span class="code-variable">"orange"</span>, <span class="code-variable">"kiwi"</span>, <span class="code-variable">"melon"</span>, <span class="code-variable">"mango"</span>)
+              <span class="code-keyword">print</span>(thistuple[-<span class="code-intvariable">4</span>:-<span class="code-intvariable">1</span>])
+            </code>
+          </div>
+
+          <h3>Check if Item Exists</h3>
+          <p>To determine if a specified item is present in a tuple use the in keyword:</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Check if "apple" is present in the tuple:</p>
+            <code>thistuple = (<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>)
+              <span class="code-keyword">if</span> <span class="code-variable">"apple"</span> <span class="code-keyword">in</span> thistuple:
+              <span class="code-indent"><span class="code-keyword">print</span>(<span class="code-variable">"Yes, 'apple' is in the fruits tuple"</span>)</span>
+            </code>
+          </div>
+
+          <h3>Update Tuples</h3>
+          <p>
+            Tuples are unchangeable, meaning that you cannot change, add, or remove items once the tuple is created.
+            <br>
+            <br>
+            But there are some workarounds.
+          </p>
+          
+          <h3>Change Tuple Values</h3>
+          <p>
+            Once a tuple is created, you cannot change its values. Tuples are <b>unchangeable</b>, or <b>immutable</b> as it also is called.
+            <br>
+            <br>
+            But there is a workaround. You can convert the tuple into a list, change the list, and convert the list back into a tuple.
+          </p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Convert the tuple into a list to be able to change it:</p>
+            <code>x = (<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>)
+              y = <span class="code-keyword">list</span>(x)
+              y[<span class="code-intvariable">1</span>] = <span class="code-variable">"kiwi"</span>
+              x = <span class="code-keyword">tuple</span>(y)
+              
+              <span class="code-keyword">print</span>(x)
+            </code>
+          </div>
+
+          <h3>Add Items</h3>
+          <p>
+            Since tuples are immutable, they do not have a build-in <span class="code-keyword">append()</span> method, but there are other ways to add items to a tuple.
+            <br>
+            <br>
+            1. <b>Convert into a list:</b> Just like the workaround for changing a tuple, you can convert it into a list, add your item(s), and convert it back into a tuple.
+          </p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Convert the tuple into a list, add "orange", and convert it back into a tuple:</p>
+            <code>thistuple = (<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>)
+              y = <span class="code-keyword">list</span>(thistuple)
+              y.append(<span class="code-variable">"orange"</span>)
+              thistuple = <span class="code-keyword">tuple</span>(y)
+            </code>
+          </div>
+          <p>2. <b>Add tuple to a tuple.</b> You are allowed to add tuples to tuples, so if you want to add one item, (or many), create a new tuple with the item(s), and add it to the existing tuple:</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Create a new tuple with the value "orange", and add that tuple:</p>
+            <code>thistuple = (<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>)
+              y = (<span class="code-variable">"orange"</span>,)
+              thistuple += y
+              
+              <span class="code-keyword">print</span>(thistuple)
+            </code>
+          </div>
+          <br>
+          <div class="note-container">
+            <p><b>Note:</b> When creating a tuple with only one item, remember to include a comma after the item, otherwise it will not be identified as a tuple.</p>
+          </div>
+
+          <h3>Remove Items</h3>
+          <div class="note-container">
+            <p><b>Note:</b> You cannot remove items in a tuple.</p>
+          </div>
+          <p>Tuples are <b>unchangeable</b>, so you cannot remove items from it, but you can use the same workaround as we used for changing  and adding tuple items:</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Convert the tuple into a list, remove "apple", and convert it back into a tuple:</p>
+            <code>thistuple = (<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>)
+              y = <span class="code-keyword">list</span>(thistuple)
+              y.remove(<span class="code-variable">"apple"</span>)
+              thistuple = <span class="code-keyword">tuple</span>(y)
+            </code>
+          </div>
+          <p>Or you can delete the tuple completely:</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>The <span class="ext-code">del</span> keyword can delete the tuple completely:</p>
+            <code>thistuple = (<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>)
+              <span class="code-keyword">del</span> thistuple
+              <span class="code-keyword">print</span>(thistuple) <span class="code-comment">#this will raise an error because the tuple no longer exists</span>
+            </code>
+          </div>
+
+          <h3>Unpacking a Tuple</h3>
+          <p>When we create a tuple, we normally assign values to it. This is called "packing" a tuple:</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Packing a tuple:</p>
+            <code>fruits = (<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>)</code>
+          </div>
+          <p>But, in Python, we are also allowed to extract the values back into variables. This is called "unpacking":</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Unpacking a tuple:</p>
+            <code>fruits = (<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>)
+            
+              (green, yellow, red) = fruits
+              
+              <span class="code-keyword">print</span>(green)
+              <span class="code-keyword">print</span>(yellow)
+              <span class="code-keyword">print</span>(red)
+            </code>
+          </div>
+          <br>
+          <div class="note-container">
+            <p><b>Note:</b> The number of variables must match the number of values in the tuple, if not, you must use an asterisk to collect the remaining values as a list.</p>
+          </div>
+
+          <h3>Using Asterisk <span class="ext-code">*</span></h3>
+          <p>If the number of variables is less than the number of values, you can add an <span class="ext-code">*</span> to the variable name and the values will be assigned to the variable as a list:</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Assign the rest of the values as a list called "red":</p>
+            <code>fruits = (<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>, <span class="code-variable">"strawberry"</span>, <span class="code-variable">"raspberry"</span>)
+            
+              (green, yellow, *red) = fruits
+              
+              <span class="code-keyword">print</span>(green)
+              <span class="code-keyword">print</span>(yellow)
+              <span class="code-keyword">print</span>(red)
+            </code>
+          </div>
+          <p>If the asterisk is added to another variable name than the last, Python will assign values to the variable until the number of values left matches the number of variables left</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Add a list of values the "tropic" variable:</p>
+            <code>fruits = (<span class="code-variable">"apple"</span>, <span class="code-variable">"mango"</span>, <span class="code-variable">"papaya"</span>, <span class="code-variable">"pineapple"</span>, <span class="code-variable">"cherry"</span>)
+            
+              (green, *tropic, red) = fruits
+              
+              <span class="code-keyword">print</span>(green)
+              <span class="code-keyword">print</span>(tropic)
+              <span class="code-keyword">print</span>(red)
+            </code>
+          </div>
+
+          <h3>Loop Through a Tuple</h3>
+          <p>You can loop through the tuple items by using a <span class="ext-code">for</span> loop.</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Iterate through the items and print the values:</p>
+            <code>thistuple = (<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>)
+              <span class="code-keyword">for</span> x <span class="code-keyword">in</span> thistuple:
+              <span class="code-indent"><span class="code-keyword">print</span>(x)</span>
+            </code>
+          </div>
+
+          <h3>Loop Through the Index Numbers</h3>
+          <p>
+            You can also loop through the tuple items by referring to their index number.
+            <br>
+            <br>
+            Use the <span class="ext-code">range()</span> and <span class="ext-code">len()</span> functions to create a suitable iterable.
+          </p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Print all items by referring to their index number:</p>
+            <code>thistuple = (<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>)
+              <span class="code-keyword">for</span> i <span class="code-keyword">in</span> <span class="code-keyword">range</span>(<span class="code-keyword">len</span>(thistuple)):
+              <span class="code-indent"><span class="code-keyword">print</span>(thistuple[i])</span>
+            </code>
+          </div>
+
+          <h3>Using a While Loop</h3>
+          <p>
+            You can loop through the tuple items by using a <span class="ext-code">while</span> loop.
+            <br>
+            <br>
+            Use the <span class="ext-code">len()</span> function to determine the length of the tuple, then start at 0 and loop your way through the tuple items by referring to their indexes.
+            <br>
+            <br>
+            Remember to increase the index by 1 after each iteration.
+          </p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Print all items, using a <span class="ext-code">while</span> loop to go through all the index numbers:</p>
+            <code>thistuple = (<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>)
+              i = <span class="code-intvariable">0</span>
+              <span class="code-keyword">while</span> i < <span class="code-keyword">len</span>(thistuple): 
+              <span class="code-indent"><span class="code-keyword">print</span>(thistuple[i])</span>
+              <span class="code-indent">i=i + <span class="code-intvariable">1</span></span>
+          </code>
+          </div>
+
+          <h3>Join Two Tuples</h3>
+          <p>To join two or more tuples you can use the <span class="ext-code">+</span> operator:</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Join two tuples:</p>
+            <code>tuple1 = (<span class="code-variable">"a"</span>, <span class="code-variable">"b"</span>, <span class="code-variable">"c"</span>)
+              tuple2 = (<span class="code-intvariable">1</span>, <span class="code-intvariable">2</span>, <span class="code-intvariable">3</span>)
+              
+              tuple3 = tuple1 + tuple2
+              <span class="code-keyword">print</span>(tuple3)
+            </code>
+          </div>
+
+          <h3>Multiply Tuples</h3>
+          <p>If you want to multiply the content of a tuple a given number of times, you can use the <span class="ext-code">*</span> operator:</p>
+          <div class="example-container">
+            <p class="text-example">Example</p>
+            <p>Multiply the fruits tuple by 2:</p>
+            <code>fruits = (<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>)
+              mytuple = fruits * <span class="code-variable">2</span>
+              
+              <span class="code-keyword">print</span>(mytuple)
+            </code>
+          </div>
+
+          <h3>Tuple Methods</h3>
+          <p>Python has two built-in methods that you can use on tuples.</p>
+          <table>
+            <tr>
+              <th>Method</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>count()</td>
+              <td>Returns the number of times a specified value occurs in a tuple</td>
+            </tr>
+            <tr>
+              <td>index()</td>
+              <td>Searches the tuple for a specified value and returns the position of where it was found</td>
+            </tr>
+          </table>
+          
+        </article>
+      </section>
+
+
+      <section class="main-section" id="Sets">
+        <header>Sets</header>
+        <article>
+          
+        </article>
+      </section>
+
+      
+      <section class="main-section" id="Dictionaries">
+        <header>Dictionaries</header>
+        <article>
+          
+        </article>
+      </section>
+
+
+      <section class="main-section" id="If...Else">
+        <header>If...Else</header>
+        <article>
+          
+        </article>
+      </section>
+
+
+      <section class="main-section" id="While_Loops">
+        <header>While Loops</header>
+        <article>
+          
+        </article>
+      </section>
+
+
+      <section class="main-section" id="For_Loops">
+        <header>For Loops</header>
+        <article>
+          
+        </article>
+      </section>
+
+
+      <section class="main-section" id="Functions">
+        <header>Functions</header>
+        <article>
+          
+        </article>
+      </section>
+
+
+      <section class="main-section" id="Lambda">
+        <header>Lambda</header>
+        <article>
+          
+        </article>
+      </section>
+
+
+      <section class="main-section" id="Arrays">
+        <header>Arrays</header>
+        <article>
+          
+        </article>
+      </section>
+
+
+      <section class="main-section" id="Classes/Objects">
+        <header>Classes/Objects</header>
+        <article>
+          
+        </article>
+      </section>
+
+
+      <section class="main-section" id="Inheritance">
+        <header>Inheritance</header>
+        <article>
+          
+        </article>
+      </section>
+
+
+      <section class="main-section" id="Iterators">
+        <header>Iterators</header>
+        <article>
+          
+        </article>
+      </section>
+
+
+      <section class="main-section" id="Try...Except">
+        <header>Try...Except</header>
+        <article>
+          
+        </article>
+      </section>
+
+
+      <section class="main-section" id="User_Input">
+        <header>User Input</header>
+        <article>
+          
+        </article>
+      </section>
+
+
+      <section class="main-section" id="String_Formatting">
+        <header>String Formatting</header>
+        <article>
+          
+        </article>
+      </section>
+
+
+      <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <article>
+          <ul>
+            <li>All the documentation in this page is taken from <a href="https://www.w3schools.com/python">W3Schools</a>.
+            </li>
+          </ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

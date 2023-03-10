@@ -1,0 +1,277 @@
+html, body {
+  /* min-width: 290px; */
+  color: #212529;
+  background-color: white;
+  font-family: 'Open Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+html::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+html::-webkit-scrollbar {
+  width: 12px;
+  background-color: #F5F5F5;
+}
+
+html::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  background-color: #555;
+}
+
+#navbar {
+  position: fixed;
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 400px;
+  height: 100%;
+  border-right: solid;
+  border-color: #1C82AD;
+}
+
+#navbar ul::-webkit-scrollbar {
+  display: none;
+}
+
+#navbar header {
+  color: black;
+  margin: 0;
+  text-align: center;
+  font-size: 30px;
+  font-weight: thin;
+  padding: 20px;
+  border-bottom: 3px solid #1C82AD;
+}
+
+#navbar ul {
+  height: 91%;
+  padding: 0;
+  overflow: scroll;
+  margin: 0;
+  font-size: 28px;
+}
+
+#navbar li {
+  color: black;
+  border-bottom: 1px solid #1C82AD;
+  list-style: none;
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+#navbar a {
+  display: block;
+  padding: 10px 30px;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#navbar a:hover {
+  color: #E7B10A;
+}
+
+#main-doc {
+  position: relative;
+  margin-left: 410px;
+  padding: 20px;
+  margin-bottom: 110px;
+  margin-top: -10px;
+  font-size: 22px;
+}
+
+#main-doc header {
+  text-align: left;
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 36px;
+  border-bottom: 3px solid #1C82AD;
+  padding: 20px;
+}
+
+code {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #EEEEEE;
+  color: black;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.python-link {
+  color: black;
+}
+
+.cmd {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: black;
+  color: white;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.gray-cmd {
+  color: gray;
+}
+
+.code-error {
+  color: #D2042D;
+}
+
+.code-indent {
+  padding-left: 15px;
+  text-indent: 15px;
+}
+
+.code-indent2 {
+  padding-left: 40px;
+  text-indent: 40px;
+}
+
+.code-comment {
+  color: green;
+}
+
+.code-variable {
+  color: maroon;
+}
+
+.code-intvariable {
+  color: red;
+}
+
+.text-example {
+  font-size: 26px;
+  margin: 0;
+}
+
+.illegal {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: rgb(255, 0, 0, 0.2);
+  color: black;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.ext-code {
+  background-color: #6C757C30;
+  color: maroon;
+  padding: 5px;
+}
+
+.code-keyword {
+  color: #0047AB;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 3px;
+}
+
+.td-left {
+  text-align: left;
+  width: 70%;
+}
+
+td {
+  text-align: center;
+}
+
+.example-container {
+  background-color: #ECF9FF;
+  padding: 20px 20px 30px 20px;
+  border-radius: 10px;
+}
+
+.illegal-example {
+  background-color: rgb(255, 0, 0, 0.1);
+  padding: 20px 20px 30px 20px;
+  border-radius: 10px;
+}
+
+.note-container {
+  background-color: rgb(255, 255, 204, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  font-size: large;
+}
+
+.text-link {
+  color: black;
+}
+
+/* redesign navbar for mobile hamburger menu?? */
+@media only screen and (max-width: 960px) {
+
+  #navbar {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 475px;
+    border: none;
+    z-index: 1
+  }
+
+  #navbar li {
+    font-size: large;
+  }
+
+  #navbar ul {
+    border: 1px double #6C757C;
+    height: 407px;
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 470px;
+    font-size: medium;
+  }
+
+  #main-doc header {
+    text-align: center;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  .text-example {
+    font-size: 22px;
+  }
+}

@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python Documentation</title>
+  <link rel="stylesheet" href="styles_debug.css">
+</head>
+
+<body>
+  <nav id="navbar">
+    <header>Python Documentation</header>
+    <ul>
+      <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+      <li><a class="nav-link" href="#Get_Started">Get Started</a></li>
+      <li><a class="nav-link" href="#Syntax">Syntax</a></li>
+      <li><a class="nav-link" href="#Comments">Comments</a></li>
+      <li><a class="nav-link" href="#Variables">Variables</a></li>
+      <li><a class="nav-link" href="#Data_Types">Data Types</a></li>
+      <li><a class="nav-link" href="#Numbers">Numbers</a></li>
+      <li><a class="nav-link" href="#Casting">Casting</a></li>
+      <li><a class="nav-link" href="#Strings">Strings</a></li>
+      <li><a class="nav-link" href="#Booleans">Booleans</a></li>
+      <li><a class="nav-link" href="#Operators">Operators</a></li>
+      <li><a class="nav-link" href="#Lists">Lists</a></li>
+      <li><a class="nav-link" href="#Tuples">Tuples</a></li>
+      <li><a class="nav-link" href="#Sets">Sets</a></li>
+      <li><a class="nav-link" href="#Dictionaries">Dictionaries</a></li>
+      <li><a class="nav-link" href="#If...Else">If...Else</a></li>
+      <li><a class="nav-link" href="#While_Loops">While Loops</a></li>
+      <li><a class="nav-link" href="#For_Loops">For Loops</a></li>
+      <li><a class="nav-link" href="#Functions">Functions</a></li>
+      <li><a class="nav-link" href="#Lambda">Lambda</a></li>
+      <li><a class="nav-link" href="#Arrays">Arrays</a></li>
+      <li><a class="nav-link" href="#Classes/Objects">Classes/Objects</a></li>
+      <li><a class="nav-link" href="#Inheritance">Inheritance</a></li>
+      <li><a class="nav-link" href="#Iterators">Iterators</a></li>
+      <li><a class="nav-link" href="#Try...Except">Try...Except</a></li>
+      <li><a class="nav-link" href="#User_Input">User Input</a></li>
+      <li><a class="nav-link" href="#String_Formatting">String Formatting</a></li>
+      <li><a class="nav-link" href="#Reference">Reference</a></li>
+    </ul>
+  </nav>
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <article>
+        <h3>What is Python?</h3>
+        <p>Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.</p>
+        <p>It is used for:</p>
+        <ul>
+          <li>web development (server-side),</li>
+          <li>software development,</li>
+          <li>mathematics,</li>
+          <li>system scripting.</li>
+        </ul>
+        <h4>What can Python do?</h4>
+        <ul>
+          <li>Python can be used on a server to create web applications.</li>
+          <li>Python can be used alongside software to create workflows.</li>
+          <li>Python can connect to database systems. It can also read and modify files.,</li>
+          <li>Python can be used to handle big data and perform complex mathematics.</li>
+          <li>Python can be used for rapid prototyping, or for production-ready software development.</li>
+        </ul>
+        <h4>Why Python?</h4>
+        <ul>
+          <li>Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).</li>
+          <li>Python has a simple syntax similar to the English language.</li>
+          <li>Python has syntax that allows developers to write programs with fewer lines than some other programming
+            languages.</li>
+          <li>Python runs on an interpreter system, meaning that code can be executed as soon as it is written. This
+            means that prototyping can be very quick.</li>
+          <li>Python can be treated in a procedural way, an object-oriented way or a functional way.</li>
+        </ul>
+        <h4>Good to know</h4>
+        <ul>
+          <li>The most recent major version of Python is Python 3, which we shall be using in this tutorial. However,
+            Python 2, although not being updated with anything other than security updates, is still quite popular.</li>
+          <li>In this tutorial Python will be written in a text editor. It is possible to write Python in an Integrated
+            Development Environment, such as Thonny, Pycharm, Netbeans or Eclipse which are particularly useful when
+            managing larger collections of Python files.</li>
+        </ul>
+        <h4>Python Syntax compared to other programming languages</h4>
+        <ul>
+          <li>Python was designed for readability, and has some similarities to the English language with influence from
+            mathematics.</li>
+          <li>Python uses new lines to complete a command, as opposed to other programming languages which often use
+            semicolons or parentheses.</li>
+          <li>Python relies on indentation, using whitespace, to define scope; such as the scope of loops, functions and
+            classes. Other programming languages often use curly-brackets for this purpose.</li>
+        </ul>
+      </article>
+    </section>
+
+
+    <section class="main-section" id="Get_Started">
+      <header>Get Started</header>
+      <article>
+        <h3>Python Install</h3>
+        <p>Many PCs and Macs will have python already installed.</p>
+        <p>To check if you have python installed on a Windows PC, search in the start bar for Python or run the
+          following on the Command Line (cmd.exe):</p>
+        <code class="cmd">C:\Users\Your Name>python --version</code>
+        <p>To check if you have python installed on a Linux or Mac, then on linux open the command line or on Mac open
+          the Terminal and type:</p>
+        <code class="cmd">python --version</code>
+        <p>If you find that you do not have Python installed on your computer, then you can download it for free from
+          the following website: <a href="https://www.python.org" class="python-link">https://www.python.org/</a></p>
+
+        <h3>Python Quickstart</h3>
+        <p>Python is an interpreted programming language, this means that as a developer you write Python (.py) files in
+          a text editor and then put those files into the python interpreter to be executed.</p>
+        <p>The way to run a python file is like this on the command line:</p>
+        <code class="cmd">C:\Users\Your Name>python helloworld.py</code>
+        <p>Where "helloworld.py" is the name of your python file.</p>
+        <p>Let's write our first Python file, called helloworld.py, which can be done in any text editor.</p>
+        <code><span class="code-output">print</span>("Hello, World!")</code>
+        <p>Simple as that. Save your file. Open your command line, navigate to the directory where you saved your file,
+          and run:</p>
+        <code class="cmd">C:\Users\Your Name>python helloworld.py</code>
+        <p>The output should read:</p>
+        <code class="cmd">Hello, World!</code>
+        <p>Congratulations, you have written and executed your first Python program.</p>
+
+        <h3>The Python Command Line</h3>
+        <p>To test a short amount of code in python sometimes it is quickest and easiest not to write the code in a
+          file. This is made possible because Python can be run as a command line itself.</p>
+        <p>Type the following on the Windows, Mac or Linux command line:</p>
+        <code class="cmd">C:\Users\Your Name>python</code>
+        <p>Or, if the "python" command did not work, you can try "py":</p>
+        <code class="cmd">C:\Users\Your Name>py</code>
+        <p>From there you can write any python, including our hello world example from earlier in the tutorial:</p>
+        <code class="cmd"><span class="gray-cmd">C:\Users\Your Name>python
+            Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:04:45) [MSC v.1900 32 bit (Intel)] on win32
+            Type "help", "copyright", "credits" or "license" for more information.</span>
+            >>> print("Hello, World!")
+          </code>
+        <p>Which will write "Hello, World!" in the command line:</p>
+        <code class="cmd"><span class="gray-cmd">C:\Users\Your Name>python
+            Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:04:45) [MSC v.1900 32 bit (Intel)] on win32
+            Type "help", "copyright", "credits" or "license" for more information.
+            >>> print("Hello, World!")</span>
+            Hello, World!
+          </code>
+        <p>Whenever you are done in the python command line, you can simply type the following to quit the python
+          command line interface:</p>
+        <code class="cmd">exit()</code>
+      </article>
+    </section>
+
+
+    <section class="main-section" id="Syntax">
+      <header>Syntax</header>
+      <article>
+        <h3>Execute Python Syntax</h3>
+        <p>As we learned in the previous page, Python syntax can be executed by writing directly in the Command Line:
+        </p>
+        <code class="cmd">>>> print("Hello, World!")
+            Hello, World!
+          </code>
+        <p>Or by creating a python file on the server, using the .py file extension, and running it in the Command Line:
+        </p>
+        <code class="cmd">C:\Users\Your Name>python myfile.py</code>
+
+        <h3>Python Identation</h3>
+        <p>Indentation refers to the spaces at the beginning of a code line.</p>
+        <p>Where in other programming languages the indentation in code is for readability only, the indentation in
+          Python is very important.</p>
+        <p>Python uses indentation to indicate a block of code.</p>
+        <code>if 5 > 2:
+            <span class="code-indent"><span class="code-output">print</span>("Five is greater than two!")</span>
+          </code>
+        <p>Python will give you an error if you skip the indentation:</p>
+        <code class="code-error">if 5 > 2:
+            <span class="code-output">print</span>("Five is greater than two!")
+          </code>
+        <p>he number of spaces is up to you as a programmer, the most common use is four, but it has to be at least one.
+        </p>
+        <code>if 5 > 2:
+            <span class="code-indent"><span class="code-output">print</span>("Five is greater than two!")</span> 
+            if 5 > 2:
+            <span class="code-indent2"><span class="code-output">print</span>("Five is greater than two!") </span>
+          </code>
+        <p>You have to use the same number of spaces in the same block of code, otherwise Python will give you an error:
+        </p>
+        <code class="code-error">if 5 > 2:
+            <span class="code-indent"><span class="code-output">print</span>("Five is greater than two!")</span>
+            <span class="code-indent2"><span class="code-output">print</span>("Five is greater than two!")</span>
+          </code>
+
+        <h3>Python Variables</h3>
+        <p>In Python, variables are created when you assign a value to it:</p>
+        <code>x = 5
+            y = "Hello, World!"
+          </code>
+        <p>Python has no command for declaring a variable.</p>
+        <p>You will learn more about variables in the Python Variables chapter.</p>
+
+        <h3>Comments</h3>
+        <p>Python has commenting capability for the purpose of in-code documentation.</p>
+        <p>Comments start with a #, and Python will render the rest of the line as a comment:</p>
+        <code><span class="code-comment">#This is a comment.</span>
+            <span class="code-output">print</span>("Hello, World!")
+          </code>
+      </article>
+    </section>
+
+
+    <section class="main-section" id="Comments">
+      <header>Comments</header>
+      <article>
+        <p>Comments can be used to explain Python code.</p>
+        <p>Comments can be used to make the code more readable.</p>
+        <p>Comments can be used to prevent execution when testing code.</p>
+
+        <h3>Creating a Comment</h3>
+        <p>Comments starts with a #, and Python will ignore them:</p>
+        <code><span class="code-comment">#This is a comment</span>
+            <span class="code-output">print</span>("Hello, World!")
+          </code>
+        <p>Comments can be placed at the end of a line, and Python will ignore the rest of the line:</p>
+        <code><span class="code-output">print</span>("Hello, World!") <span class="code-comment">#This is a comment</span></code>
+        <p>A comment does not have to be text that explains the code, it can also be used to prevent Python from
+          executing code:</p>
+        <code><span class="code-comment">#<span class="code-output">print</span>("Hello, World!")</span>
+            <span class="code-output">print</span>("Cheers, Mate!")
+          </code>
+
+        <h3>Multi Line Comments</h3>
+        <p>Python does not really have a syntax for multi line comments.</p>
+        <p>To add a multiline comment you could insert a # for each line:</p>
+        <code><span class="code-comment">#This is a comment
+            #written in
+            #more than just one line</span>
+            <span class="code-output">print</span>("Hello, World!")
+          </code>
+        <p>Or, not quite as intended, you can use a multiline string.</p>
+        <p>Since Python will ignore string literals that are not assigned to a variable, you can add a multiline string
+          (triple quotes) in your code, and place your comment inside it:</p>
+        <code><span class="code-comment">"""
+            This is a comment
+            written in
+            more than just one line
+            """</span>
+            <span class="code-output">print</span>("Hello, World!")
+          </code>
+        <p>As long as the string is not assigned to a variable, Python will read the code, but then ignore it, and you
+          have made a multiline comment.</p>
+      </article>
+    </section>
+
+
+    <section class="main-section" id="Variables">
+      <header>Variables</header>
+      <article>
+        <h3>Variables</h3>
+        <p>Variables are containers for storing data values.</p>
+
+        <h3>Creating Variables</h3>
+        <p>Python has no command for declaring a variable.</p>
+        <p>A variable is created the moment you first assign a value to it.</p>
+        <code>x = 5
+            y = "John"
+            <span class="code-output">print</span>(x)
+            <span class="code-output">print</span>(y)
+          </code>
+        <p>Variables do not need to be declared with any particular type, and can even change type after they have been
+          set.</p>
+        <code>x = 4       <span class="code-comment"># x is of type int</span>
+            x = "Sally" <span class="code-comment"># x is now of type str</span>
+            <span class="code-output">print</span>(x)
+          </code>
+
+        <h3>Casting</h3>
+        <p>If you want to specify the data type of a variable, this can be done with casting.</p>
+        <code>x = str(3)    <span class="code-comment"># x will be '3'</span>
+            y = int(3)    <span class="code-comment"># y will be 3</span>
+            z = float(3)  <span class="code-comment"># z will be 3.0</span>
+          </code>
+
+        <h3>Get the Type</h3>
+        <p>You can get the data type of a variable with the type() function.</p>
+        <code>x = 5
+            y = "John"
+            <span class="code-output">print</span>(type(x))
+            <span class="code-output">print</span>(type(y))
+          </code>
+
+        <h3>Single or Double Quotes?</h3>
+        <p>String variables can be declared either by using single or double quotes:</p>
+
+        <p>Example</p>
+        <code>x = "John"
+            <span class="code-comment"># is the same as</span>
+            x = 'John'
+          </code>
+
+        <h3>Case-Sensitive</h3>
+        <p>Variable names are case-sensitive.</p>
+        <code>a = 4
+            A = "Sally"
+            <span class="code-comment">#A will not overwrite a</span>
+          </code>
+
+        <h3>Variable Names</h3>
+        <p>A variable can have a short name (like x and y) or a more descriptive name (age, carname, total_volume).
+          Rules for
+          Python variables:</p>
+        <ul>
+          <li>A variable name must start with a letter or the underscore character</li>
+          <li>A variable name cannot start with a number</li>
+          <li>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _)</li>
+          <li>Variable names are case-sensitive (age,</li>
+        </ul>
+        <p>Legal Variable Names:</p>
+        <code> myvar = <span class= "code-variable">"John"</span>
+            my_var = <span class="code-variable">"John"</span>
+            _my_var = <span class="code-variable">"John"</span>
+            myVar = <span class="code-variable">"John"</span>
+            MYVAR = <span class="code-variable">"John"</span>
+            myvar2 = <span class="code-variable">"John"</span>
+          </code>
+        <p>Illegal Variable Names:</p>
+        <code class="illegal">2myvar = <span class="code-variable">"John"</span>
+          my-var = <span class="code-variable">"John"</span>
+          my var = <span class="code-variable">"John"</span>
+          </code>
+
+        <h3>Multi Words Variable Names</h3>
+        <p>Variable names with more than one word can be difficult to read.</p>
+        <p>There are several techniques you can use to make them more readable:</p>
+
+        <h3>Camel Case</h3>
+        <p>Each word, except the first, starts with a capital letter:</p>
+        <code>myVariableName = <span class="code-variable">"John"</span></code>
+
+        <h3>Pascal Case</h3>
+        <p>Each word starts with a capital letter:</p>
+        <code>MyVariableName = <span class="code-variable">"John"</span></code>
+
+        <h3>Snake Case</h3>
+        <p>Each word is separated by an underscore character:</p>
+        <code>my_variable_name = <span class="code-variable">"John"</span></code>
+
+        <h3>Many Values to Multiple Variables</h3>
+        <p>Python allows you to assign values to multiple variables in one line:</p>
+        <code>x, y, z = <span class="code-variable">"Orange"</span>, <span class="code-variable">"Banana"</span>, <span class="code-variable">"Cherry"</span>
+            <span class="code-output">print</span>(x)
+            <span class="code-output">print</span>(y)
+            <span class="code-output">print</span>(z)
+          </code>
+
+        <h3>One Value to Multiple Variables</h3>
+        <p>And you can assign the same value to multiple variables in one line:</p>
+        <code>x = y = z = <span class="code-variable">"Orange"</span>
+            <span class="code-output">print</span>(x)
+            <span class="code-output">print</span>(y)
+            <span class="code-output">print</span>(z)
+          </code>
+
+        <h3>Unpack a Collection</h3>
+        <p>If you have a collection of values in a list, tuple, etc. Python allows you to extract the values into
+          variables. This is called <i>unpacking</i>.</p>
+        <code>fruits = [<span class="code-variable">"apple"</span>, <span class="code-variable">"banana"</span>, <span class="code-variable">"cherry"</span>]
+            x, y, z = fruits
+            <span class="code-output"><span class="code-output">print</span></span>(x)
+            <span class="code-output"><span class="code-output">print</span></span>(y)
+            <span class="code-output"><span class="code-output">print</span></span>(z)
+          </code>
+
+        <h3>Output Variables</h3>
+        <p>The Python <span class="ext-code">print()</span> function is often used to output variables.</p>
+        <code>x = <span class="code-variable">"Python is awesome"</span>
+            <span class="code-output"><span class="code-output">print</span></span>
+            Python is awesome
+          </code>
+        <p>In the <span class="ext-code">print()</span> function, you output multiple variables, separated by a comma.
+        </p>
+        <code>x = <span class="code-variable">"Python"</span>
+            y = <span class="code-variable">"is"</span>
+            z = <span class="code-variable">"awesome"</span>
+            <span class="code-output">print</span>(x, y, z)
+            Python is awesome
+          </code>
+        <p>You can use the <span class="ext-code">+</span> operator to output multiple variables:</p>
+        <code>x = <span class="code-variable">"Python "</span>
+            y = <span class="code-variable">"is "</span>
+            z = <span class="code-variable">"awesome"</span>
+            <span class="code-output">print</span>(x + y + z)
+            Python is awesome
+          </code>
+        <p>For numbers, the <span class="ext-code">+</span> character works as a mathematical operator:</p>
+        <code>x = <span class="code-variable">5</span>
+            y = <span class="code-variable">10</span>
+            <span class="code-output">print</span>(x + y)
+            15
+          </code>
+        <p>In the <span class="ext-code">print()</span> function, when you try to combine a string and a number with the
+          <span class="ext-code">+</span> operator, Python will give you an error:</p>
+        <code class="illegal">x = <span class="code-variable">5</span>
+            y = <span class="code-variable">"John"</span>
+            <span class="code-output">print</span>(x + y)
+            TypeError: unsupported operand type(s) for +: 'int' and 'str'
+          </code>
+        <p>The best way to output multiple variables in the <span class="ext-code">print()</span> function is to
+          separate them with commas, which even support different data types:</p>
+        <code>x = <span class="code-variable">5</span>
+            y = <span class="code-variable">"John"</span>
+            <span class="code-output">print</span>(x, y)
+            5 John
+          </code>
+
+        <h3>Global Variables</h3>
+        <p>Variables that are created outside of a function (as in all of the examples above) are known as global
+          variables.
+          <br>
+          <br>
+          Global variables can be used by everyone, both inside of functions and outside.
+        </p>
+        <p>Example</p>
+        <code>x = <span class="code-variable">"awesome</span>
+            <span class="code-output">def</span> myfunc():
+            <span class="code-indent"><span class="code-output">print</span>(<span class="code-variable">"Python is "</span> + x)</span>
+            myfunc()
+            Python is awesome
+          </code>
+        <p>If you create a variable with the same name inside a function, this variable will be local, and can only be
+          used inside the function. The global variable with the same name will remain as it was, global and with the
+          original value.</p>
+        <p>Example</p>
+        <code>x = "awesome"
+            <span class="code-output">def</span> myfunc():
+            <span class="code-indent">x = <span class="code-variable">"fantastic"</span></span>
+            <span class="code-indent"><span class="code-output">print</span>(<span class="code-variable">"Python is "</span> + x)</span>
+            myfunc()
+            <span class="code-output">print</span>(<span class="code-variable">"Python is "</span> + x)
+            Python is awesome
+          </code>
+        <h3>The Global Keyword</h3>
+        <p>Normally, when you create a variable inside a function, that variable is local, and can only be used inside
+          that function.
+          <br>
+          <br>
+          To create a global variable inside a function, you can use the <span class="ext-code">global</span> keyword.
+        </p>
+        <p>If you use the <span class="ext-code">global</span> keyword, the variable belongs to the global scope:</p>
+        <code><span class="code-output">def</span> myfunc()
+            <span class="code-indent"><span class="code-output">global</span> x </span>
+            <span class="code-indent">x = <span class="code-variable">"fantastic"</span></span>
+            myfunc()
+            <span class="code-output">print</span>(<span class="code-variable">"Python is "</span> + x)
+            Python is fantastic
+          </code>
+        <p>Also, use the <span class="ext-code">global</span> keyword if you want to change a global variable inside a
+          function.</p>
+        <p>To change the value of a global variable inside a function, refer to the variable by using the <span
+            class="ext-code">global</span> keyword:</p>
+        <code>x = <span class="code-variable">"awesome"</span>
+            <span class="code-output">def</span> myfunc():
+            <span class="code-indent"><span class="code-output">global</span> x</span>
+            <span class="code-indent">x = <span class="code-variable">"fantastic</span></span>
+            myfunc()
+            <span class="code-output">print</span>(<span class="code-variable">"Python is "</span> + x)
+            Python is fantastic
+          </code>
+      </article>
+    </section>
+
+
+    <section class="main-section" id="Data_Types">
+      <header>Data Types</header>
+      <article>
+        <h3>Built-in Data Types</h3>
+        <p>In programming, data type is an important concept.
+          <br>
+          <br>
+          Variables can store data of different types, and different types can do different things.
+          <br>
+          <br>
+          Python has the following data types built-in by default, in these categories:
+        </p>
+        <ul>
+          <li>Text Type: <span class="ext-code">str</span></li>
+          <li>Numeric Types:<span class="ext-code">int</span>, <span class="ext-code">float</span>, <span
+              class="ext-code">complex</span></li>
+          <li>Sequence Types: <span class="ext-code">list</span>, <span class="ext-code">tuple</span>, <span
+              class="ext-code">range</span></li>
+          <li>Mapping Type: <span class="ext-code">dict</span></li>
+          <li>Set Types: <span class="ext-code">set</span>, <span class="ext-code">frozenset</span></li>
+          <li>Boolean Type: <span class="ext-code">bool</span></li>
+          <li>Binary Types: <span class="ext-code">bytes</span>, <span class="ext-code">bytearray</span>, <span
+              class="ext-code">memoryview</span></li>
+          <li>None Type: <span class="ext-code">nonetype</span></li>
+        </ul>
+        <h3>Getting the Data Type</h3>
+        <p>You can get the data type of any object by using the <span class="ext-code">type()</span> function:</p>
+        <code>x = <span class="code-variable">5</span>
+            <span class="code-output">print</span>(<span class="code-output">type</span>(x))
+            class 'int'
+          </code>
+
+        <h3>Setting the Data Type</h3>
+        <p>In Python, the data type is set when you assign a value to a variable:</p>
+        <table>
+          <tr>
+            <th>Example</th>
+            <th>Data Type</th>
+          </tr>
+          <tr>
+            <td class="td-left">x = "Hello World"</td>
+            <td>str</td>
+          <tr>
+            <td class="td-left">x = 20</td>
+            <td>int</td>
+          </tr>
+          <tr>
+            <td class="td-left">x = 20.5</td>
+            <td>float</td>
+          </tr>
+          <tr>
+            <td class="td-left">x = 1j</td>
+            <td>complex</td>
+          </tr>
+          <tr>
+            <td class="td-left">x = ["apple", "banana", "cherry"]</td>
+            <td>list</td>
+          </tr>
+          <tr>
+            <td class="td-left">x = ("apple", "banana", "cherry")</td>
+            <td>tuple</td>
+          </tr>
+          <tr>
+            <td class="td-left">x = range(6)</td>
+            <td>range</td>
+          </tr>
+          <tr>
+            <td class="td-left">x = {"name" : "John", "age" : 36}</td>
+            <td>dict</td>
+          </tr>
+          <tr>
+            <td class="td-left">x = {"apple", "banana", "cherry"}</td>
+            <td>set</td>
+          </tr>
+          <tr>
+            <td class="td-left">x = frozenset({"apple", "banana", "cherry"})</td>
+            <td>frozenset</td>
+          </tr>
+          <tr>
+            <td class="td-left">x = True</td>
+            <td>bool</td>
+          </tr>
+          <tr>
+            <td class="td-left">x = b"Hello"</td>
+            <td>bytes</td>
+          </tr>
+          <tr>
+            <td class="td-left">x = bytearray(5)</td>
+            <td>bytearray</td>
+          </tr>
+          <tr>
+            <td class="td-left">x = memoryview(bytes(5))</td>
+            <td>memoryview</td>
+          </tr>
+          <tr>
+            <td class="td-left">x = None</td>
+            <td>nonetype</td>
+          </tr>
+        </table>
+
+        <h3>Setting the Specific Data Type</h3>
+        <p>If you want to specify the data type, you can use the following constructor functions:</p>
+        <table>
+          <tr>
+            <th>Example</th>
+            <th>Data Type</th>
+          </tr>
+          <tr>
+            <td class="td-left">x = str("Hello World")</td>
+            <td>str</td>
+          <tr>
+            <td class="td-left">x = int(20)</td>
+            <td>int</td>
+          </tr>
+          <tr>
+            <td class="td-left">x = float(20.5)</td>
+            <td>float</td>
+          </tr>
+          <tr>
+            <td class="td-left">x = complex(1j)</td>
+            <td>complex</td>
+          </tr>
+          <tr>
+            <td class="td-left">x = list(("apple", "banana", "cherry"))</td>
+            <td>list</td>
+          </tr>
+          <tr>
+            <td class="td-left">x = tuple(("apple", "banana", "cherry"))</td>
+            <td>tuple</td>
+          </tr>
+          <tr>
+            <td class="td-left">x = range(6)</td>
+            <td>range</td>
+          </tr>
+          <tr>
+            <td class="td-left">x = dict("name" : "John", "age" : 36)</td>
+            <td>dict</td>
+          </tr>
+          <tr>
+            <td class="td-left">x = set(("apple", "banana", "cherry"))</td>
+            <td>set</td>
+          </tr>
+          <tr>
+            <td class="td-left">x = frozenset(("apple", "banana", "cherry"))</td>
+            <td>frozenset</td>
+          </tr>
+          <tr>
+            <td class="td-left">x = bool(5)</td>
+            <td>bool</td>
+          </tr>
+          <tr>
+            <td class="td-left">x = bytes(5)</td>
+            <td>bytes</td>
+          </tr>
+          <tr>
+            <td class="td-left">x = bytearray(5)</td>
+            <td>bytearray</td>
+          </tr>
+          <tr>
+            <td class="td-left">x = memoryview(bytes(5))</td>
+            <td>memoryview</td>
+          </tr>
+        </table>
+      </article>
+    </section>
+
+
+    <section class="main-section" id="Numbers">
+      <header>Numbers</header>
+      <article>
+        <h3>Python Numbers</h3>
+        <p>There are three numeric types in Python:</p>
+        <ul>
+          <li><span class="ext-code">int</span></li>
+          <li><span class="ext-code">float</span></li>
+          <li><span class="ext-code">complex</span></li>
+        </ul>
+        <p>Variables of numeric types are created when you assign a value to them:</p>
+        <code>x = <span class="code-variable">1</span><span class="code-comment"> # int</span>
+            y = <span class="code-variable">2.8</span><span class="code-comment"> # float</span>
+            z = 1j <span class="code-comment"> # complex</span>
+          </code>
+        <p>To verify the type of any object in Python, use the <span class="ext-code">type()</span> function:</p>
+        <code><span class="code-output">print</span>(<span class="code-output">type</span>(x))
+            <span class="code-output">print</span>(<span class="code-output">type</span>(y))
+            <span class="code-output">print</span>(<span class="code-output">type</span>(z))
+          </code>
+
+        <h3>Int</h3>
+        <p>Int, or integer, is a whole number, positive or negative, without decimals, of unlimited length.</p>
+        <code>x = <span class="code-variable">1</span>
+            y = <span class="code-variable">35656222554887711</span>
+            z = -<span class="code-variable">3255522</span>
+            <span class="code-output">print</span>(<span class="code-output">type</span>(x))
+            <span class="code-output">print</span>(<span class="code-output">type</span>(y))
+            <span class="code-output">print</span>(<span class="code-output">type</span>(z))
+          </code>
+
+        <h3>Float</h3>
+        <p>Float, or "floating point number" is a number, positive or negative, containing one or more decimals.</p>
+        <code>x = <span class="code-variable">1.10</span>
+            y = <span class="code-variable">1.0</span>
+            z = -<span class="code-variable">35.59</span>
+            <span class="code-output">print</span>(<span class="code-output">type</span>(x))
+            <span class="code-output">print</span>(<span class="code-output">type</span>(y))
+            <span class="code-output">print</span>(<span class="code-output">type</span>(z))
+          </code>
+        <p>Float can also be specific numbers with an "e" to indicate the power of 10.</p>
+        <code>x = <span class="code-variable">35e3</span>
+            y = <span class="code-variable">12E4</span>
+            z = -<span class="code-variable">87.7e100</span>
+            <span class="code-output">print</span>(<span class="code-output">type</span>(x))
+            <span class="code-output">print</span>(<span class="code-output">type</span>(y))
+            <span class="code-output">print</span>(<span class="code-output">type</span>(z))
+          </code>
+
+        <h3>Complex</h3>
+        <p>Complex numbers are written with a "j" as the imaginary part:</p>
+        <code>x = <span class="code-variable">3</span>+5j
+            y = 5j
+            z = -5j
+            <span class="code-output">print</span>(<span class="code-output">type</span>(x))
+            <span class="code-output">print</span>(<span class="code-output">type</span>(y))
+            <span class="code-output">print</span>(<span class="code-output">type</span>(z))
+          </code>
+
+        <h3>Type Conversion</h3>
+        <p>You can convert from one type to another with the int(), float(), and complex() methods:</p>
+        <code>x = <span class="code-variable">1</span> <span class="code-comment"># int</span>
+            y = <span class="code-variable">2.8</span> <span class="code-comment"># float</span>
+            z = 1j <span class="code-comment"># complex</span>
+            
+            <span class="code-comment">#convert from int to float:</span>
+            a = <span class="code-output">float</span>(x)
+            
+            <span class="code-comment">#convert from float to int:</span>
+            b = <span class="code-output">int</span>(y)
+            
+            <span class="code-comment">#convert from int to complex:</span>
+            c = <span class="code-output">complex</span>(x)
+            
+            <span class="code-output">print</span>(a)
+            <span class="code-output">print</span>(b)
+            <span class="code-output">print</span>(c)
+            
+            <span class="code-output">print</span>(<span class="code-output">type</span>(a))
+            <span class="code-output">print</span>(<span class="code-output">type</span>(b))
+            <span class="code-output">print</span>(<span class="code-output">type</span>(c))
+          </code>
+
+        <h3>Random Number</h3>
+        <p>Python does not have a <span class="code-variable">random()</span> function to make a random number, but
+          Python has a built-in module called <span class="code-variable">random</span> that can be used to make random
+          numbers:</p>
+        <code><span class="code-output">import</span> random
+            <span class="code-output">print</span>(random.randrange(<span class="code-variable">1</span>, <span class="code-variable">10</span>))
+          </code>
+      </article>
+    </section>
+
+
+    <section class="main-section" id="Casting">
+      <header>Casting</header>
+      <article>
+
+      </article>
+    </section>
+
+
+    <section class="main-section" id="Strings">
+      <header>Strings</header>
+      <article>
+
+      </article>
+    </section>
+
+
+    <section class="main-section" id="Booleans">
+      <header>Booleans</header>
+      <article>
+
+      </article>
+    </section>
+
+
+    <section class="main-section" id="Operators">
+      <header>Operators</header>
+      <article>
+
+      </article>
+    </section>
+
+
+    <section class="main-section" id="Lists">
+      <header>Lists</header>
+      <article>
+
+      </article>
+    </section>
+
+
+    <section class="main-section" id="Tuples">
+      <header>Tuples</header>
+      <article>
+
+      </article>
+    </section>
+
+
+    <section class="main-section" id="Sets">
+      <header>Sets</header>
+      <article>
+
+      </article>
+    </section>
+
+
+    <section class="main-section" id="Dictionaries">
+      <header>Dictionaries</header>
+      <article>
+
+      </article>
+    </section>
+
+
+    <section class="main-section" id="If...Else">
+      <header>If...Else</header>
+      <article>
+
+      </article>
+    </section>
+
+
+    <section class="main-section" id="While_Loops">
+      <header>While Loops</header>
+      <article>
+
+      </article>
+    </section>
+
+
+    <section class="main-section" id="For_Loops">
+      <header>For Loops</header>
+      <article>
+
+      </article>
+    </section>
+
+
+    <section class="main-section" id="Functions">
+      <header>Functions</header>
+      <article>
+
+      </article>
+    </section>
+
+
+    <section class="main-section" id="Lambda">
+      <header>Lambda</header>
+      <article>
+
+      </article>
+    </section>
+
+
+    <section class="main-section" id="Arrays">
+      <header>Arrays</header>
+      <article>
+
+      </article>
+    </section>
+
+
+    <section class="main-section" id="Classes/Objects">
+      <header>Classes/Objects</header>
+      <article>
+
+      </article>
+    </section>
+
+
+    <section class="main-section" id="Inheritance">
+      <header>Inheritance</header>
+      <article>
+
+      </article>
+    </section>
+
+
+    <section class="main-section" id="Iterators">
+      <header>Iterators</header>
+      <article>
+
+      </article>
+    </section>
+
+
+    <section class="main-section" id="Try...Except">
+      <header>Try...Except</header>
+      <article>
+
+      </article>
+    </section>
+
+
+    <section class="main-section" id="User_Input">
+      <header>User Input</header>
+      <article>
+
+      </article>
+    </section>
+
+
+    <section class="main-section" id="String_Formatting">
+      <header>String Formatting</header>
+      <article>
+
+      </article>
+    </section>
+
+
+    <section class="main-section" id="Reference">
+      <header>Reference</header>
+      <article>
+        <ul>
+          <li>All the documentation in this page is taken from <a href="https://www.w3schools.com/python">W3Schools</a>.
+          </li>
+        </ul>
+      </article>
+    </section>
+  </main>
+</body>
+
+</html>
